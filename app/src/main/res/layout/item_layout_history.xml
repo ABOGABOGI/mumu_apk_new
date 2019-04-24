@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:background="#20BBBBBB"
+    android:shadowColor="@color/colorPrimaryDark"
+    android:layout_height="100dp">
+
+    <TextView
+        android:id="@+id/txt_example1"
+        android:layout_width="401dp"
+        android:layout_height="90dp"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:background="#FFFFFF"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iconView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/coin_hijau" />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/iconView"
+        android:text="Test title"
+        android:textColor="@color/color_primary_dark_mumu"
+        android:textSize="14dp" />
+
+
+    <TextView
+        android:id="@+id/nilaiView"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-9dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toEndOf="@+id/numberView"
+        android:layout_toRightOf="@+id/iconView"
+        android:gravity="right"
+        android:text="Test title"
+        android:textColor="@color/color_primary_dark_mumu"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/numberView"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/_3dp"
+        android:layout_marginRight="14dp"
+        android:layout_toRightOf="@+id/iconView"
+        android:text="Test title"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/statusView"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberView"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_marginTop="@dimen/_3dp"
+        android:layout_marginRight="14dp"
+        android:layout_toRightOf="@+id/iconView"
+        android:text="Test title"
+        android:textColor="@color/arrow_color"
+        android:textSize="14dp" />
+
+
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="23dp"
+        android:layout_toEndOf="@+id/iconView"
+        android:text="tanggal berapa"
+        android:textSize="12dp" />
+
+</RelativeLayout>

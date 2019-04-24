@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- TRANSPARNT CODE
+    100% — FF 95% — F2 90% — E6 85% — D9
+    80% — CC 75% — BF 70% — B3
+    65% — A6 60% — 99 55% — 8C
+    50% — 80 45% — 73 40% — 66
+    35% — 59 30% — 4D 25% — 40
+    20% — 33 15% — 26 10% — 1A
+    5% — 0D  0% — 00-->
+
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#ff0000</color>
+
+    <!-- google's material design colours from
+    http://www.google.com/design/spec/style/color.html#color-ui-color-palette -->
+
+    <!--reds-->
+    <color name="md_red_500">#F44336</color>
+
+    <!-- pinks -->
+
+    <!-- purples -->
+
+    <!-- deep purples -->
+
+    <!-- indigo -->
+
+    <!--blue-->
+
+    <!-- light blue-->
+
+    <!-- cyan -->
+
+    <!-- teal -->
+
+    <!-- green -->
+    <color name="md_green_900">#1B5E20</color>
+
+    <!--light green-->
+
+    <!-- lime-->
+
+    <!--yellow -->
+
+    <!--amber-->
+
+    <!--orange-->
+
+    <!--deep orange-->
+
+    <!--brown -->
+
+    <!--grey-->
+    <color name="md_grey_100">#F5F5F5</color>
+    <color name="md_grey_200">#eeeeee</color>
+    <color name="md_grey_300">#e0e0e0</color>
+    <color name="md_grey_500">#9E9E9E</color>
+    <color name="md_grey_600">#757575</color>
+    <color name="md_grey_700">#616161</color>
+    <color name="md_grey_800">#424242</color>
+    <color name="md_black_1000">#000000</color>
+    <color name="md_white_1000">#ffffff</color>
+
+    <!-- WARNA MPOS -->
+    <!--<color name="brick">#c62828</color>
+    <color name="brick_dark">#ce264d</color>
+    <color name="dark_peach">#e57373</color>
+    <color name="dark_grass_green">#417505</color>
+    <color name="blush">#f69b9b</color>
+    <color name="blushtransparent">#Bff69b9b</color>
+    <color name="blush_two">#f18989</color>
+    <color name="pastel_red">#dc605d</color>
+    <color name="pale_red">#d54e44</color>
+    <color name="reddish">#ca3a37</color>
+    <color name="brick_two">#c12929</color>
+    <color name="brick_three">#a72020</color>
+    <color name="red_brown">#921515</color>
+    <color name="red_brown_two">#821414</color>-->
+
+    <!-- WARNA HOKIPOS -->
+    <!--<color name="brick">#ef3858</color>
+    <color name="brick_dark">#ce264d</color>
+    <color name="dark_peach">#e6738d</color>
+    <color name="blush">#eca3b4</color>
+    <color name="blushtransparent">#Bfeca3b4</color>
+    <color name="blush_two">#ec819a</color>
+    <color name="pastel_red">#dc605d</color>
+    <color name="pale_red">#d54e44</color>
+    <color name="reddish">#ca3a37</color>
+    <color name="brick_two">#c12929</color>
+    <color name="brick_three">#a72020</color>
+    <color name="red_brown">#921515</color>
+    <color name="red_brown_two">#821414</color>-->
+
+    <!-- WARNA BAROKA -->
+    <color name="baroka_white">#f1f1f1</color>
+    <color name="baroka_grey">#f2f2f2</color>
+    <color name="baroka_black">#4b4b4b</color>
+    <color name="txt_color_grey">@color/baroka_grey</color>
+    <color name="brick">#032d17</color>
+    <color name="brick_dark">@color/md_grey_800</color>
+    <color name="blush">#9BF6C7</color>
+    <color name="reddish">#37ca77</color>
+    <color name="red_brown">#159258</color>
+
+
+    <!--blue grey-->
+    <color name="md_blue_grey_200">#B0BBC5</color>
+    <color name="md_blue_grey_900">#263238</color>
+
+    <color name="mpos_green_1">#93B100</color>
+    <color name="mpos_green_2">#7a8600</color>
+
+    <color name="color_brown">#343838</color>
+    <color name="white_two">#d8d8d8</color>
+
+    <!--RED GLOBAL COLOR-->
+    <!--<color name="bg_splash">@color/brick</color>-->
+    <color name="toolbar">@color/color_primary_dark_mumu</color>
+    <!--<color name="edt_login">@color/brick</color>-->
+
+    <color name="text_style">@color/brick_dark</color>
+    <color name="button_summary">@color/white_two</color>
+    <color name="text_style2">@android:color/black</color>
+    <color name="btn_style">@color/brick</color>
+    <color name="icon_style">@color/brick</color>
+    <color name="list_activity">@color/blush</color>
+    <color name="toolbar2">#E57373</color>
+    <color name="bg_pending_trans2">@color/blush</color>
+    <color name="pending_trans_divider">@color/blush</color>
+    <color name="loading">@color/brick</color>
+    <color name="text_style_light">@android:color/white</color>
+    <color name="arrow_color">@color/md_grey_700</color>
+    <color name="dotted_line">@color/brick</color>
+    <color name="bg_dialog">#f2d8d8d8</color>
+    <color name="bg_netral">#F7F7F7</color>
+    <color name="btn_menu_landing_page">#F7F7F7</color>
+    <color name="btn_menu_landing_page_dark">#cfcfcf</color>
+    <color name="button_summary_child">#4a4a4a</color>
+    <color name="list_belanja_dark">#F2F2F2</color>
+    <color name="list_belanja_light">@color/md_white_1000</color>
+    <color name="bg_metode_pembayaran_lain">#efefef</color>
+    <color name="bg_nominal">#efefef</color>
+    <color name="stroke_qr_code">@color/brick</color>
+    <color name="transparent">@android:color/transparent</color>
+
+
+
+</resources>
+
+
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="id.co.hike.apps.android_mpos_mumu.features.profil.PosCamera">
+
+    <io.fotoapparat.view.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5dp"
+                android:id="@+id/btnBatal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tutup"
+                android:background="@drawable/gray_button"
+                android:textAllCaps="false"
+                android:textColor="@color/md_grey_600"/>
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5dp"
+                android:id="@+id/btnTakeFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take Photo"
+                android:background="@drawable/btn_style_primary_mumu"
+                android:textAllCaps="false"
+                android:textColor="@color/text_style_light"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

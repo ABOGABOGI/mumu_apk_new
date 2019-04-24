@@ -1,0 +1,240 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="deskripsi_lupa_pin">Masukan email akun anda dan sistem akan mengirimkan link konfirmasi reset Password.\n
+<b>Masa berlaku link hanya 30 menit sejak
+di kirim dari sistem.</b></string>
+
+
+    <string name="terimakasih">Transaksi berhasil.\nJangan lupa ucapkan \"<b>terima kasih</b>\"</string>
+    <string name="photo_permission_rationale">Izin penyimpanan dibutuhkan untuk mengambil foto dokumen.</string>
+    <string name="returned_from_app_settings_to_activity">Izin penyimpanan sudah diaktifkan</string>
+    <string name="returned_from_app_settings_to_activity_notactive">Izin penyimpanan tidak diaktifkan</string>
+    <string name="program_proteksi_title">Program Proteksi dari Dompet Dhuafa</string>
+    <string name="program_proteksi_desc">Program Proteksi dari Dompet Dhuafa adalah program untuk proteksi anda dan keluarga.</string>
+    <string name="tagihan_telepon_title">Tagihan Telepon</string>
+    <string name="tagihan_telepon_desc">Nikmati kemudahan cek dan pembayaran tagihan telepon rumah dan telepon seluler Anda, kapan saja dan dimana saja dengan Aplikasi mumu. Pengecekan dan pembayaran tagihan dengan Aplikasi mumu dapat dilakukan selama 24 jam non-stop, lebih mudah dan cepat, aman dan terpercaya.</string>
+    <string name="destinasi_title">Destinasi</string>
+    <string name="destinasi_desc">Mau traveling? Nikmati kemudahan booking tiket pesawat, kereta, kapal, dan hotel di Aplikasi mumu. Prosesnya mudah, aman, bebas pilih kursi, layanan 24 jam non-stop, dengan berbagai destinasi wisata terbaik untuk Anda.</string>
+    <string name="pdam_title">PDAM</string>
+    <string name="pdam_desc">Nikmati kemudahan cek dan pembayaran tagihan air, kapan saja dan dimana saja dengan Aplikasi mumu. Pengecekan dan pembayaran tagihan dengan Aplikasi mumu dapat dilakukan selama 24 jam non-stop, lebih mudah dan cepat, aman dan terpercaya.</string>
+
+    <string name="info_searhpelanggan_nofound">Nama pelanggan tidak ditemukan</string>
+    <string name="mohon_lengkapi_form">Mohon lengkapi form</string>
+    <string name="email_tidak_valid">Email tidak valid</string>
+    <string name="list_stok_kosong">List item diupdate:</string>
+    <string name="read_phone_state_permission_rationale">Izin pembacaan state phone dibutuhkan</string>
+
+    <string name="contoh_id_pelanggan">Contoh: 123456789012</string>
+    <string name="input_kurang_dari_100">Input modal kurang dari 100</string>
+    <string name="pelanggan_dan_email_sudah_ada">Error: email atau nomor telepon sudah ada.</string>
+    <string name="nomor_terlalu_pendek">Nomor terlalu pendek, minimal 10 karakter</string>
+    <string name="nomor_tidak_valid">Nomor telepon tidak valid</string>
+    <string name="image_terlalu_besar">Gagal upload! Gambar yang diupload terlalu besar</string>
+    <string name="title_promo_hari_ini">Promo Hari Ini</string>
+    <string name="bluetooth_tidak_support">Bluetooth tidak support</string>
+    <string name="bluetooth_berhasil_connect">Connect card reader success</string>
+    <string name="bluetooth_connect_failed">Connect card reader failed</string>
+    <string name="transaksi_dihapus">Transaksi dihapus</string>
+    <string name="bluetooth_tidak_tersedia">Bluetooth is not available</string>
+    <string name="bluetooth_connecting">Connecting to devices...</string>
+    <string name="pastikan_bluetooth_dan_cardreader_menyala">gagal terhubung, pastikan card reader dan bletooth anda menyala</string>
+    <string name="bluetooth_disconnecting">Bluetooth disconnecting</string>
+    <string name="pelanggan_telah_ditambah">Pelanggan telah ditambah</string>
+    <string name="konfirmasi_terima_modal_sukses">Konfirmasi modal terima sukses</string>
+    <string name="title_profil">Profil</string>
+    <string name="title_setor">Setor</string>
+    <string name="setor_modal_berhasil">Modal setor berhasil</string>
+    <string name="title_ganti_profil">Ganti Profil</string>
+    <string name="error_pick_on_kamera">Error pick on camera</string>
+    <string name="error_pick_on_gallery">Error pick on gallery</string>
+    <string name="update_profil_sukses">Update profile sukses</string>
+    <string name="tambah_produk">Tambah produk</string>
+    <string name="input_diskon_kurang_dari_baseprice">Input diskon kurang dari total base price</string>
+    <string name="transaksi_disimpan">Transaksi Disimpan</string>
+    <string name="transaksi_dikunci">Transaksi Dikunci</string>
+    <string name="lupa_password">lupa password ?</string>
+    <string name="masuk">Masuk</string>
+    <string name="loading">Loading</string>
+    <string name="btn_simpan">Simpan</string>
+    <string name="df_title_tambah_pelanggan">Tambah Pelanggan</string>
+    <string name="df_title_daftar_transaksi_tertunda">Daftar Transaksi Tertunda</string>
+    <string name="title_pembelian_pulsa_telepon">Pembelian Pulsa Telepon</string>
+    <string name="title_pembelian_listrik">Bayar dan Beli Listrik</string>
+    <string name="title_pembelian_pdam">Bayar Tagihan PDAM</string>
+    <string name="title_pembelian_telco">Bayar Tagihan PTSN</string>
+    <string name="btn_cek_tagihan">Cek Tagihan</string>
+    <string name="btn_ok">Ok</string>
+    <string name="btn_selesai">Selesai</string>
+    <string name="btn_print">Print</string>
+    <string name="btn_setor">Setor</string>
+    <string name="btn_modal">Modal</string>
+    <string name="btn_terima">Terima</string>
+    <string name="title_modal">Modal</string>
+    <string name="title_aktifitas">Aktifitas</string>
+    <string name="id_pelanggan_kurang_dari_11_karakter">Nomor terlalu pendek, minimal 11 karakter</string>
+    <string name="ppob_wrong_pin">Pin salah</string>
+
+    <string name="pulsa">Pulsa</string>
+
+    <string name="txt_akad">Saya menitipkan amanah zakat kepada Dompet Dhuafa mohon disampaikan dan digunakan sesuai dengan ketentuan syariah</string>
+    <string name="txt_image_akad">Image_akad</string>
+    <string name="txt_akad_wakaf">Saya telah membaca niat</string>
+    <string name="txt_btn_lanjut">Lanjut</string>
+    <string name="txt_bismillah">Bismillahirrahmanirrahim</string>
+    <string name="title_akad">Ikrar Wakaf</string>
+    <string-array name="months">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+        <item>MM</item>
+    </string-array>
+    <string name="tnc_text">
+        Selamat datang.\n\nTerima Kasih Anda telah mengunduh Aplikasi MuMu. Aplikasi MuMu adalah layanan aplikasi sebagaimana dimaksud dalam Syarat dan Ketentuan ini. Pada saat anda mengunduh Aplikasi, Anda mengakui dan menyetujui bahwa Anda telah membaca dengan teliti, memahami, menerima dan menyetujui seluruh Syarat dan Ketentuan yang akan berlaku sebagai perjanjian antara Anda dengan Dompet Dhuafa, beserta rekanan Dompet Dhuafa yang tergabung dalam Layanan Aplikasi ini.\n\nMOHON ANDA MEMBACA DAN MEMAHAMI SYARAT DAN KETENUAN KAMI DENGAN SEKSAMA SEBELUM MENGUNDUH APLIKASI ATAU MENGGUNAKAN LAYANAN KAMI UNTUK PERTAMA KALI-NYA.\n\nLayanan yang tersedia untuk Anda pada Aplikasi MuMu sangat-lah beragam, sehingga kami harus mencantumkan atau memberlakukan Syarat dan Ketentuan tambahan untuk keperluan Layanan tertentu, dimana persyaratan tambahan tersebut merupakan bagian dari Layanan kami dan akan tunduk dan terikat dengan Syarat dan Ketentuan ini.\n\nKami berhak untuk setiap waktu mengubah, menambah, mengurangi, mengganti, menyesuaikan, dan/atau memodifikasi Syarat dan Ketentuan (baik sebagian ataupun seluruhnya Untuk itu Anda diwajibkan untuk dari waktu ke waktu membaca Syarat dan Ketentuan yang kami sediakan dalam website tersebut diatas atau melalui Aplikasi).\n\nSyarat dan Ketentuan ini berlaku terhadap Anda maupun atas Transaksi atau atas penggunaan Layanan oleh atau melalui Akun Anda dimanapun Anda berada.\n\nI. DEFINISI\n\nKecuali dinyatakan atau didefinisikan lain dalam syarat dan ketentuan yang lebih khusus maka istilah-istilah di bawah ini memiliki definisi sebagai berikut:\n\nI.	“Aplikasi MuMu” adalah aplikasi ini yang Anda unduh (download) sehingga Anda masuk pada Laman ini atau Syarat dan Ketentuan ini, yang saat ini dikenal dengan merek, nama, logo dan/atau tanda yang dikenal dengan “MuMu” atau merek, nama, logo dan/atau tanda lainnya.\n\nII.	“Akun” atau “Akun Anda” berarti identifikasi khusus yang dibuat di MuMu berdasarkan permintaan pendaftaran Anda.\n\nIII.	“Data” berarti adalah setiap data, informasi dan/atau keterangan dalam bentuk apapun yang dari waktu ke waktu (termasuk pada saat Anda mengunduh “(download) Aplikasi) Anda sampaikan kepada Kami/Penyedia Layanan atau yang Anda cantumkan atau sampaikan dalam, pada atau melalui Aplikasi.\n\nIV.	“Kami” adalah Dompet Dhuafa.\n\nV.	“Layanan” berarti setiap layanan, program, jasa, produk, fitur, sistem, fasilitas dan/atau jasa yang disediakan dan/atau ditawarkan dalam atau melalui Aplikasi.\n\nVI.	“Layanan Pengguna (Call Center MuMu)” adalah fungsi customer service center untuk Pengguna MuMu yang dapat dihubungi lewat panggilan telepon dan/atau email.\n\nVII.	“MuMu” adalah sistem elektronik (platform) yang dibuat oleh Dompet Dhuafa.\n\nVIII.	“Pengguna MuMu” adalah pengguna Aplikasi MuMu.\n\nIX.	“Syarat dan Ketentuan” berarti syarat dan ketentuan umum ini berikut setiap perubahan, penambahan, penggantian, penyesuaian dan/atau modifikasinya yang dibuat dari waktu ke waktu.\n\nX.	“Transaksi” berarti segala transaksi, kegiatan, aktivitas dan/atau aksi yang dilakukan dalam atau melalui Aplikasi, Akun dan/atau Security Code termasuk penggunaan Layanan atau fitur-fitur tertentu dalam Layanan atau Aplikasi.\n\nXI.	“DD” adalah Dompet Dhuafa xxxxxxxxxx.\n\nII. PANDUAN SINGKAT\n\nI.	Aplikasi MuMu merupakan aplikasi perangkat lunak dimana seluruh instruksi yang Anda lakukan akan berasal dari mobile aplikasi atau online.\n\nII.	Aplikasi MuMu dapat dioperasikan melalui HP Android minimal marshmellow (OS 6 ke atas) melalui Google Play Store.\n\nIII.	Anda akan diminta untuk melakukan otorisasi instruksi dengan menggunakan berbagai jenis informasi keamanan yang berbeda (misalnya Security Code, nama pengguna, password) jika dibutuhkan.\n\nIV.	Setelah melakukan otorisasi, MuMu akan melaksanakan instruksi sesuai perintah Anda, Anda diwajibkan untuk memastikan tidak memberitahukan informasi keamanan Anda kepada pihak lain.\n\nV.	MuMu memastikan kerahasiaan dan keamanan informasi diri yang Anda berikan terjaga dengan baik. Penggunaan data Anda akan kami lakukan sesuai dengan ketentuan yang berlaku.\n\nVI.	Anda dapat menanyakan atau memberi masukkan kepada kami melalui Contact Center Layanan Pengguna MuMu (+622129517760).\n\nIII. JENIS PRODUK\n\nA.	MuMu PPOB adalah (Payment Point Online Bank) adalah sistem pembayaran online dengan memanfaatkan fasilitas perbankan, seperti pembayaran pembelian pulsa prabayar, paket data prabayar, tagihan PLN, PDAM, tiket pesawat, dan lain-lain.\n\nB.	MuMu Donasi, Zakat, dan Wakaf adalah pemanfaatan Aplikasi MuMu sebagai platform bagi pengguna MuMu untuk melakukan pembayaran donasi, zakat, dan wakaf secara digital, mudah, dan murah.\n\nC.	MuMu Proteksi adalah program yang memungkinkan pengguna MuMu untuk menjamin kehidupan seorang (atau lebih) dhuafa.\n\nD.	Saldo MuMu\n\nI.	Saldo MuMu adalah saldo uang elektronik yang dapat digunakan untuk berbagai macam transaksi pembayaran.\n\nII.	Batas maksimum saldo MuMu yang tersimpan pada Aplikasi adalah sebesar Rp2.000.000,- (dua juta rupiah).\n\nIII.	Pengguna dapat melakukan top up (atau menambah) saldo yang tersedia.\n\nIV. PENGGUNAAN DAN PENGELOLAAN DATA\n\nI.	1. Anda dengan ini mengakui, memberikan izin dan menyetujui bahwa seluruh Data Anda yang Anda serahkan kepada Kami, baik secara langsung maupun tidak langsung, melalui penggunaan Aplikasi MuMu, terekam dalam sistem Kami. Dengan demikian Anda dengan ini mengakui dan menyetujui, memberikan izin serta memberikan kuasa bahwa Kami berhak untuk (baik sendiri maupun dengan menunjuk atau bekerjasama dengan satu atau lebih pihak lain) sepenuhnya mengumpulkan, menggunakan, mengelola, menganalisa, mengolah, menyimpan, mengakses, menginformasikan, memberitahukan, membagikan dan/atau menyampaikan sebagian atau seluruh Data kepada pihak manapun (termasuk tetapi tidak terbatas pada Penyedia Layanan, pihak afiliasi Kami maupun pihak lainnya yang memiliki kerjasama atau perjanjian dengan Kami), serta untuk melakukan tindakan apapun atas Data, termasuk tetapi tidak terbatas untuk tujuan: (a) penyediaan, pemberian dan/atau peningkatan Layanan, (b) penggunaan Aplikasi, (c) pendaftaran keikutsertaan Anda sebagai pengguna Aplikasi atau Layanan dan jasa yang disediakan dalam atau melalui Aplikasi, (d) pengadministrasian, pemrosesan dan/atau pengeloaan Akun (termasuk antara lain untuk keperluan verifikasi, validasi dan/atau pengelolaan Transaksi), (e) riset mengenai data demografis pengguna Aplikasi, (f) pengembangan dan/atau pembaharuan Aplikasi, (g) pengiriman informasi yang Kami anggap berguna untuk Anda termasuk antara lain informasi tentang Layanan dan/atau Aplikasi maupun informasi mengenai pembaharuan Sistem (atau bagian manapun daripadanya), dan/atau (h) pengembangan, peningkatan, pembaharuan, penggantian dan/atau penyediaan Layanan, Sistem dan/atau Aplikasi.\n\nII.	Anda dengan ini menyatakan, menjamin dan mengakui secara tegas dan tidak dapat dicabut kembali bahwa penyerahan dan penyampaian Data Anda kepada Kami sebagaimana dimaksud butir 1 di atas tidak melanggar hak Anda maupun hak orang atau pihak manapun termasuk tetapi tidak terbatas pada hak kekayaan intelektual milik Anda maupun milik orang atau pihak manapun yang berkaitan dengan pribadi Anda.\n\nIII.	1. Anda berjanji tidak akan melakukan tindakan apapun yang dapat menyebabkan Kami tidak dapat memberikan informasi di atas. Untuk keperluan tersebut, dengan ini Anda juga membebaskan Kami. Persetujuan dan kuasa yang diberikan oleh Anda tidak dapat ditarik kembali sepanjang Anda melakukan transaksi online dengan Kami yang secara sah dapat dilakukan tanpa diperlukan tambahan surat persetujuan dan kuasa tersendiri dari Pemohon (Anda).\n\nIV.	Ketentuan butir 1, 2 dan 3 di atas tetap berlaku dan mengikat Anda, Kami meskipun Layanan, Aplikasi, Akun dan/atau Syarat dan Ketentuan telah berakhir.\n\nV. KEWAJIBAN PERNYATAAN DAN JAMINAN\n\nI.	Anda hanya dapat mengakses atau menggunakan Aplikasi, Layanan, dan/atau Sistem (a) sesuai dengan Syarat dan Ketentuan ini, (b) untuk tujuan yang sah, dan (c) tidak digunakan untuk tujuan atau tindakan penipuan, pelanggaran hukum, kriminal maupun tindakan, aktifitas, perbuatan atau tujuan lain yang melanggar atau bertentangan dengan hukum, peraturan perundang-undangan yang berlaku maupun hak atau kepentingan pihak manapun. Anda bertanggung jawab penuh untuk memeriksa dan memastikan bahwa Anda telah mengunduh (download) software yang benar untuk perangkat Anda. Kami tidak bertanggung jawab jika Anda tidak memiliki perangkat yang kompatibel dengan Sistem atau Aplikasi atau jika Anda telah mengunduh (download) versi software yang salah untuk perangkat Anda.\n\nII.	1. Anda dilarang untuk menggunakan Layanan, Aplikasi dan/atau Akun atau melakukan Transaksi: (a) untuk tujuan, kegiatan, aktifitas atau aksi yang melanggar hukum atau melanggar hak atau kepentingan (termasuk Hak Kekayaan Intelektual atau hak privasi milik pihak manapun); (b) yang memiliki materi atau unsur yang berbahaya atau yang merugikan pihak manapun; (c) yang mengandung virus software, worm, trojan horses atau kode komputer berbahaya lainnya, file, script, agen atau program; dan (d) yang mengganggu integritas atau kinerja Sistem dan/atau Aplikasi.\n\nIII.	1. Anda dilarang untuk melakukan tindakan apapun termasuk dalam atau melalui Aplikasi atau Akun serta dilarang untuk melakukan Transaksi yang dapat merusak atau mengganggu reputasi Kami atau Penyedia Layanan.\n\nIV.	Anda dengan ini secara tegas menyetujui serta menyatakan dan menjamin bahwa:\n\nI.	a. Anda adalah individu yang secara hukum cakap untuk melakukan tindakan hukum berdasarkan hukum negara Republik Indonesia termasuk untuk mengikatkan diri dalam Syarat dan Ketentuan ini. Jika Anda tidak memenuhi syarat ini, Kami berhak untuk sewaktu-waktu untuk men-nonaktifkan atau mengakhiri penggunaan Akun, Layanan dan/atau Aplikasi, baik untuk sementara waktu maupun untuk seterusnya;\n\nII.	Anda memiliki hak, wewenang dan kapasitas untuk menggunakan Layanan dan Akun serta untuk melaksanakan seluruh Syarat dan Ketentuan;\n\nIII.	a. jika Anda melakukan pendaftaran atau mengunduh Aplikasi atas nama suatu badan hukum, persekutuan perdata atau pihak lain, Anda dengan ini menyatakan dan menjamin bahwa Anda memiliki kapasitas, hak dan wewenang yang sah untuk bertindak untuk dan atas nama badan hukum, persekutuan perdata atau pihak lain tersebut termasuk tetapi tidak terbatas pada mengikat badan hukum, persekutuan perdata atau pihak lain tersebut untuk tunduk pada seluruh isi Syarat dan Ketentuan;\n\nIV.	Anda telah membaca seluruh isi Syarat dan Ketentuan serta telah mengerti dan memahami seluruh isi Syarat dan Ketentuan ini dan karenanya mengikatkan diri secara sukarela untuk tunduk dengan serta melaksanakan seluruh Syarat dan Ketentuan ini;\n\nV.	a. Anda menyatakan dan menjamin bahwa dana yang dipergunakan dalam rangka transaksi bukan dana yang berasal dari tindak pidana yang dilarang berdasarkan peraturan perundang-undangan yang berlaku di Republik Indonesia, pembukaan rekening ini tidak dimaksudkan dan/atau ditujukan dalam rangka upaya melakukan tidak pidana pencucian uang sesuai dengan ketentuan peraturan perundang-undangan yang berlaku di Republik Indonesia, transaksi tidak dilakukan untuk maksud mengelabui, mengaburkan, atau menghindari pelaporan kepada Pusat Pelaporan Dan Analisa Transaksi Keuangan (PPATK) berdasarkan ketentuan peraturan perundang-undangan yang berlaku di Republik Indonesia, dan Anda bertanggung jawab sepenuhnya serta melepaskan DD dari segala tuntutan, klaim, atau ganti rugi dalam bentuk apapun, apabila Anda melakukan tindak pidana pencucian uang berdasarkan ketentuan peraturan perundang-undangan yang berlaku di Republik Indonesia;\n\nVI.	Seluruh Data baik yang telah Anda sampaikan atau cantumkan maupun yang akan Anda sampaikan atau cantumkan baik langsung maupun tidak langsung di kemudian hari atau dari waktu ke waktu adalah benar, lengkap, akurat terkini dan tidak menyesatkan serta tidak melanggar hak (termasuk tetapi tidak terbatas pada hak kekayaan intelektual) atau kepentingan pihak manapun. Penyampaian Data oleh Anda kepada Kami atau pada atau melalui Aplikasi atau Sistem tidak bertentangan dengan hukum yang berlaku serta tidak melanggar akta, perjanjian, kontrak, kesepakatan atau dokumen lain dimana Anda merupakan pihak atau dimana Anda atau aset Anda terikat;\n\nVII.	Layanan, Aplikasi maupun Akun akan digunakan untuk kepentingan Anda sendiri atau untuk kepentingan badan hukum, badan usaha, persekutuan perdata atau pihak lain yang secara sah Anda wakili sebagaimana dimaksud huruf c di atas;\n\nVIII.	Anda tidak akan memberikan hak, wewenang dan/atau kuasa dalam bentuk apapun dan dalam kondisi apapun kepada orang atau pihak lain untuk menggunakan Data, Akun dan/atau Security Code, dan Anda karena alasan apapun dan dalam kondisi apapun tidak akan dan dilarang untuk mengalihkan Akun kepada orang atau pihak manapun; dan\n\nIX.	dalam atau pada saat menggunakan Layanan, Aplikasi dan/atau Akun, Anda setuju untuk mematuhi dan melaksanakan seluruh ketentuan hukum dan peraturan perundang-undangan yang berlaku termasuk hukum dan peraturan perundang-undangan di negara asal Anda maupun di negara atau kota dimana Anda berada.\n\nV.	Dengan melaksanakan transaksi melalui Aplikasi MuMu, Anda memahami bahwa seluruh komunikasi dan instruksi dari Anda yang diterima oleh Kami akan diperlakukan sebagai bukti solid meskipun tidak dibuat dalam bentuk dokumen tertulis atau diterbitkan dalam bentuk dokumen yang ditandatangani, dan, dengan demikian, Anda setuju untuk mengganti rugi dan melepaskan Kami dan rekanan-rekanan Kami dari segala kerugian, tanggung jawab, tuntutan dan pengeluaran (termasuk biaya litigasi) yang dapat muncul terkait dengan eksekusi dari instruksi Anda\n\nVI. PEMBATASAN TANGGUNG JAWAB\n\nI.	Layanan disediakan dalam kondisi “as is” atau “apa adanya”. Kami dan bank (dalam beberapa fitur) tidak memberikan pernyataan atau jaminan dalam bentuk apapun atas reliabilitas, keamanan, ketepatan waktu, kualitas, kesesuaian, ketersediaan, akurasi dan/atau kelengkapan Layanan, Aplikasi dan/atau Sistem. Kami tidak memberikan pernyataan atau jaminan dalam bentuk apapun bahwa:\n\nI.	penggunaan Layanan, Aplikasi, Akun dan/atau Sistem (atau bagian daripadanya) akan aman, tepat waktu, tidak terganggu atau bebas dari kesalahan, gangguan, virus atau hambatan lain atau komponen berbahaya lainnya;\n\nII.	Layanan, Aplikasi, Akun dan/atau Sistem dapat tetap beroperasi atau digunakan bersamaan dengan atau dengan kombinasi perangkat (baik hardware maupun software) atau sistem pihak lain yang tidak kami sediakan atau miliki untuk pengoperasian Aplikasi;\n\nIII.	penyediaan Layanan maupun Aplikasi atau kelancaran ber-Transaksi atau penggunaan Akun akan memenuhi persyaratan atau harapan Anda;\n\nIV.	setiap data Transaksi yang Kami simpan atau tersimpan dalam Sistem harus akurat atau terpercaya;\n\nV.	kualitas Layanan atau Aplikasi akan memenuhi persyaratan atau harapan Anda; dan\n\nVI.	tidak akan ada kesalahan, gangguan atau cacat dari Sistem, Layanan dan/atau Aplikasi.\n\nMengingat bahwa DD hanya sebagai penyedia platform atas sebagian besar Layanan yang disediakan oleh Penyedia Layanan, maka Kami tidak bertanggung jawab terhadap isi, bentuk, jenis dan/atau ketersediaan dari Layanan tersebut maupun hal-hal lain terkait dengan Layanan tersebut yang sepenuhnya merupakan tanggung jawab pihak Penyedia Layanan.\n\nI.	Anda mengetahui dan setuju bahwa Kami berhak untuk memblokir dan/atau menutup Akun dan rekening dan/atau layanan/fasilitas apabila: a.) Kami memahami dan memiliki alasan yang memadai untuk menyatakan bahwa telah terjadi atau akan terjadi manipulasi keuangan atau perbankan atau kriminal yang terkait dengan Akun atau Rekening dan/atau layanan/fasilitas Pengguna MuMu; b.) Pengguna MuMu memberikan data yang tidak valid/tidak lengkap kepada Kami; c.) Terdapat permintaan tertulis dari instansi Kepolisian, Kejaksaan, Pengadilan, Pusat Pelaporan dan Analisis Transaksi Keuangan (PPATK), Kantor Pajak atau lembaga berwenang lainnya sesuai dengan hukum dan perundangan yang berlaku atau untuk memenuhi kewajiban/utang yang belum diselesaikan oleh Pengguna MuMu.\n\nII.	Anda dengan ini mengetahui bahwa Layanan, Aplikasi, Akun dan/atau Sistem mungkin atau dapat mengalami, terdapat atau terjadi pembatasan, keterlambatan, dan/atau masalah lain termasuk yang disebabkan karena atau sehubungan dengan (a) ketidaktersediaan atau terbatasnya jaringan (termasuk jaringan internet) dan/atau penggunaan atau (b) tidak tersedianya, terganggunya, atau tidak berfungsinya fitur tertentu pada perangkat yang Anda gunakan. Kami tidak bertanggung jawab atas segala keterlambatan, terhambatnya, tidak suksesnya, terganggunya atau gagalnya suatu Transaksi yang disebabkan karena hal tersebut di atas.\n\nIII.	Anda dengan ini mengetahui bahwa terdapat kemungkinan (a) Sistem atau Aplikasi (atau bagian manapun dari Sistem atau Aplikasi) tidak stabil, terganggu, terhenti, tidak berjalan dengan baik, tidak berjalan dengan sempurna dan/atau memiliki beberapa bug, dan/atau (b) Layanan (atau fitur-futur atau bagian-bagian tertentu) dapat berubah, tidak tersedia, dan atas terjadinya hal tersebut Anda setuju untuk tidak mengajukan Klaim kepada Kami.\n\nIV.	1. Kami dalam kondisi apapun tidak bertanggung jawab atas segala Klaim dari pihak manapun termasuk Anda maupun atas kerugian Anda serta pihak manapun yang terjadi sebagai akibat dari atau sehubungan dengan:\n\nI.	kehilangan Data;\n\nII.	kehilangan pendapatan, keuntungan atau pemasukan lainnya;\n\nIII.	a. kehilangan, kerusakan atau cedera yang timbul dari, atau sehubungan dengan penggunaan Anda atas Aplikasi, Layanan dan/atau Akun atau atas ketidakmampuan atau kesalahan Anda dalam menggunakan Layanan, Aplikasi dan/atau Akun; atau\n\nIV.	tuntutan maupun gugatan yang dialami oleh Anda yang mungkin timbul sebagai akibat penyampaian informasi dari Anda yang tidak lengkap atau akibat tidak dilaksanakannya instruksi Anda, antara lain pembatalan, perubahan instruksi (untuk instruksi yang belum dijalankan) yang disampaikan kepada DD, kecuali jika kerugian tersebut terjadi akibat kesalahan yang disengaja atau kelalaian oleh DD\n\nV.	Anda dengan ini setuju dan mengikatkan diri untuk membebaskan Kami dari segala Klaim dalam bentuk apapun dan dimanapun dalam hal Kami tidak dapat melaksanakan, melanjutkan atau meneruskan Transaksi maupun perintah atau instruksi dari Anda melalui Aplikasi atau Akun, baik sebagian maupun seluruhnya, yang disebabkan karena kejadian-kejadian atau hal-hal di luar kekuasaan atau kemampuan Kami termasuk namun tidak terbatas pada (a) segala gangguan virus komputer, (b) sistem trojan horses, (c) komponen atau sistem yang dapat membahayakan serta mengganggu Aplikasi, Layanan dan/atau Akun, (d) layanan atau jasa Internet Service Provider atau jasa atau layanan pihak ketiga lainnya yang tersedia dalam Layanan, dan/atau (e) bencana alam, perang, huru-hara, keadaan peralatan, sistem atau transmisi yang tidak berfungsi, gangguan listrik, gangguan telekomunikasi, kebijakan pemerintah, kegagalan sistem perbankan dan/atau keuangan serta kejadian-kejadian atau sebab-sebab lain diluar kekuasaan atau kemampuan Kami.\n\nVI.	Anda dengan ini setuju dan mengikatkan diri untuk membebaskan Kami dari setiap dan seluruh Klaim dalam bentuk apapun, dari pihak manapun dan dimanapun yang diajukan, timbul atau terjadi sehubungan dengan atau sebagai akibat dari:\n\nI.	penggunaan Data oleh Kami berdasarkan Syarat dan Ketentuan ini atau berdasarkan persetujuan, pengakuan, wewenang, kuasa dan/atau hak yang Anda berikan baik secara langsung maupun tidak langsung kepada Kami dalam Syarat dan Ketentuan ini;\n\nII.	pemberian Data baik secara langsung maupun tidak langsung oleh Anda kepada Kami atau dalam atau melalui Aplikasi ini yang Anda lakukan secara (i) melanggar atau melawan hukum atau peraturan perundang-undangan yang berlaku, (ii) melanggar hak (termasuk hak kekayaan intelektual) dari atau milik orang atau pihak manapun, atau (iii) melanggar kontrak, kerjasama, kesepakatan, akta, pernyataan, penetapan, keputusan dan/atau dokumen apapun dimana Anda merupakan pihak atau dimana Anda atau aset Anda terikat;\n\nIII.	penggunaan Aplikasi, Akun dan/atau Layanan (i) secara tidak sah, (ii) melanggar hukum yang berlaku, (iii) melanggar Syarat dan Ketentuan ini, dan/atau (iv) untuk tindakan atau tujuan penipuan, kriminal, tindakan tidak sah atau tindakan pelanggaran hukum lainnya.\n\nVII.	Anda dengan ini setuju dan mengikatkan diri untuk mengganti seluruh kerugian yang Kami alami dan mengganti seluruh biaya, ongkos, beban dan pengeluaran yang telah atau mungkin akan Kami keluarkan atau bayarkan sehubungan dengan atau sebagai akibat dari Klaim sebagaimana dimaksud butir 6, 8 dan 9 di atas (termasuk tetapi tidak terbatas pada biaya jasa hukum yang kami bayarkan atau keluarkan untuk melakukan pembelaan atau tindakan lain yang diperlukan terkait dengan Klaim tersebut).\n\nVIII.	Anda dengan ini setuju bahwa Kami akan dibebaskan dari segala tuntutan, jika Kami tidak dapat melaksanakan instruksi dari Anda, baik sebagian maupun sepenuhnya yang disebabkan oleh kejadian atau sebab yang berada di luar kendali atau kemampuan Kami, meliputi tetapi tidak terbatas pada bencana alam, peperangan, kerusuhan, kondisi perangkat keras, kegagalan sistem infrastruktur elektronik atau transmisi, gangguan daya, gangguan telekomunikasi, kegagalan sistem kliring atau hal lainnya yang ditetapkan oleh Bank Indonesia atau lembaga berwenang lainnya.\n\nIX.	Setelah kejadian yang menyebabkan DD dan/atau rekanannya tidak dapat melaksanakan instruksi dari Pemegang atau Nasabah berakhir, maka DD dan/atau rekanannya akan melanjutkan kembali instruksi tersebut dalam kurun waktu sesuai dengan ketentuan dari Bank Indonesia dan/atau Otoritas Jasa Keuangan.\n\nVII. HAK KEKAYAAN INTELEKTUAL\n\nI.	Seluruh Sistem dan Aplikasi termasuk tetapi tidak terbatas pada seluruh: (a) layout, desain dan tampilan Aplikasi yang terdapat dalam atau ditampilkan pada media Aplikasi Anda; (b) logo, foto, gambar, nama, merek, kata, huruf-huruf, angka-angka, tulisan, dan susunan warna yang terdapat dalam Aplikasi; dan (c) kombinasi dari unsur-unsur sebagaimana dimaksud dalam huruf (a) dan (b), sepenuhnya merupakan Hak Kekayaan Intelektual milik Kami dan tidak ada pihak lain yang turut memiliki hak atas Aplikasi maupun atas layout, desain dan tampilan Aplikasi.\n\nII.	Anda dilarang untuk dengan cara apapun dan dalam kondisi apapun menggunakan Hak Kekayaan Intelektual milik kami sebagaimana dimaksud dalam butir I di atas, tanpa persetujuan tertulis terlebih dahulu dari Kami.\n\nVIII. MASA BERLAKU DAN PENGAKHIRAN\n\nI.	Perjanjian ini berlaku selama Anda belum melakukan penutupan Akun dan uang elektronik pada Layanan MuMu.\n\nII.	Kami berhak untuk (i) tidak melaksanakan perintah dari Anda, (ii) tidak melanjutkan atau tidak meneruskan atau membatasi Transaksi, (iii) menghentikan, menangguhkan atau men-nonaktifkan penggunaan Akun, Layanan atau Aplikasi, dan/atau (iv) menghentikan atau menangguhkan keanggotaan Anda sebagai pengguna Aplikasi, dimana untuk masing-masing kondisi tersebut di atas baik untuk sementara waktu, untuk jangka waktu tertentu atau untuk seterusnya berdasarkan pertimbangan atau keputusan Kami yang Kami anggap baik, apabila terjadinya satu atau lebih kondisi di bawah ini:\n\nI.	berdasarkan penilaian, keputusan dan/atau pertimbangan Kami sendiri, Kami mengetahui atau menduga telah atau akan terjadi atau dilakukan penggunaan Akun, Security Code, Aplikasi dan/atau Layanan untuk tujuan penipuan, tujuan kriminal, aksi kejahatan dan/atau untuk tujuan, alasan, aksi atau aktifitas lainnya yang melanggar hukum atau peraturan perundang-undangan negara Republik Indonesia maupun negara lain;\n\nII.	berdasarkan penilaian, keputusan dan/atau pertimbangan Kami sendiri (a) Kami mengetahui atau menduga terjadi Transaksi yang tidak wajar, dan/atau (b) jumlah Transaksi dengan menggunakan atau melalui Akun dan/atau Security Code dalam satu hari melebihi jumlah atau tingkat kewajaran Transaksi, masing-masing sebagaimana ditentukan oleh Kami;\n\nIII.	berdasarkan penilaian, keputusan dan/atau pertimbangan Kami sendiri, Anda telah melanggar satu atau lebih Syarat dan Ketentuan;\n\nIV.	sebagian atau seluruh Data tidak benar, tidak lengkap, palsu, fiktif dan/atau menyesatkan;\n\nV.	alamat email atau telepon yang Anda cantumkan atau gunakan untuk penggunaan Aplikasi atau Layanan atau untuk melakukan Transaksi telah terblokir;\n\nVI.	Anda belum melengkapi proses atau persyaratan sebagaimana diatur dalam ketentuan hukum dan/atau peraturan perundang-undangan yang berlaku;\n\nVII.	Kami sedang melakukan pembaharuan, pemeliharaan, perubahan, up-grade, penyesuaian, penggantian dan/atau tindakan lain atas Aplikasi, Layanan dan/atau Sistem (atau bagian manapun daripadanya) dan untuk itu Kami tidak berkewajiban mempertanggungjawabkannya kepada siapapun; dan/atau\n\nVIII.	Anda meninggal dunia atau perusahaan, badan usaha, badan hukum atau persekutuan perdata yang Anda wakili dinyatakan atau dimohonkan pailit atau likuidasi atau berada dalam kondisi pailit atau likuidasi.\n\nIII.	Anda dengan ini sepakat untuk mengenyampingkan ketentuan Pasal 1266 ayat (2) dan (3) Kitab Undang-undang Hukum Perdata sehingga Syarat dan Ketentuan, Aplikasi dan/atau Layanan dapat diakhiri (baik sebagian maupun seluruhnya, baik sementara waktu maupun seterusnya) sesuai dengan Syarat dan Ketentuan tanpa diperlukan adanya keputusan atau penetapan dari hakim pengadilan.\n\nIV.	Jika Akun atau Rekening telah berakhir atau ditutup atau jika Layanan atau Aplikasi sudah berakhir atau diakhiri oleh Kami, jika:\n\nI.	pengakhiran Akun, Layanan atau Aplikasi disebabkan karena pelanggaran yang Anda lakukan atas satu atau lebih Syarat dan Ketentuan, maka sisa saldo pada Akun seluruhnya akan menjadi hak DD dan Anda setuju dan mengikatkan untuk tidak meminta pengembalian, pembayaran, penggantian dan/atau kompensasi dalam bentuk apapun kepada DD\n\nV.	Anda sepakat dan mengikatkan diri untuk tidak melakukan tindakan apapun yang dapat membatasi, menghambat dan/atau mengurangi satu atau lebih hak dan/atau wewenang Kami berdasarkan Syarat dan Ketentuan ini maupun hukum yang berlaku.\n\nIX. HUKUM YANG BERLAKU DAN PENYELESAIAN PERSELISIHAN\n\nI.	Syarat dan Ketentuan ini diatur dan ditafsirkan berdasarkan hukum Negara Republik Indonesia.\n\nII.	1. Segala perselisihan atau pertentangan yang timbul sehubungan dengan atau terkait dengan hal-hal yang diatur dalam Syarat dan Ketentuan (maupun bagian daripadanya) termasuk perselisihan yang disebabkan karena adanya atau dilakukannya perbuatan melawan hukum atau pelanggaran atas satu atau lebih Syarat dan Ketentuan ini (“Perselisihan”) wajib diselesaikan dengan cara sebagai berikut:\n\nI.	salah satu pihak baik Anda atau Kami (“Pihak Pertama”) wajib menyampaikan pemberitahuan tertulis kepada pihak lainnya (“Pihak Kedua”) atas telah terjadinya Perselisihan (“Pemberitahuan Perselisihan”). Perselisihan wajib diselesaikan secara musyawarah mufakat dalam waktu paling lambat 90 (sembilan puluh) hari kalender sejak tanggal Pemberitahuan Perselisihan Perselisihan (“Periode Penyelesaian Musyawarah”);\n\nII.	a. jika Perselisihan tidak dapat diselesaikan secara musyawarah mufakat sampai dengan berakhirnya Periode Penyelesaian Musyawarah, Pihak Pertama dan Pihak Kedua wajib untuk bersama-sama menunjuk pihak ketiga (“Mediator”) sebagai mediator untuk menyelesaikan Perselisihan dan penunjukan tersebut wajib dituangkan dalam bentuk tertulis yang ditandatangani bersama oleh Pihak Pertama dan Pihak Kedua.\n\nIII.	proses mediasi oleh Mediator khusus untuk sengketa Para Pihak dibidang Perbankan, diselesaikan penyelesaiannya oleh Para Pihak kepada LAPSPI yaitu Lembaga Alternatif Penyelesaian Sengketa Perbankan Indonesia sebagaimana diatur dalam Peraturan Otoritas Jasa Keuangan Nomor 1/POJK.07/2014 tentang Perlindungan Konsumen Sektor Jasa Keuangan, yang diundangkan tanggal 23 Januari 2014 (Lembaran Negara Republik Indonesia Tahun 2014 Nomor 12, Tambahan Lembaran Negara Republik Indonesia Nomor 5499) beserta perubahannya apabila ada.\n\nIV.	Anda wajib untuk menanggung seluruh biaya, ongkos dan pengeluaran yang telah atau mungkin Kami keluarkan atau bayarkan dalam rangka penyelesaian Perselisihan (termasuk tetapi tidak terbatas pada biaya, ongkos dan pengeluaran untuk menghadiri sidang arbitrase serta untuk mempersiapkan dan mengajukan segala pembelaan, gugatan, tuntutan, informasi, bukti, keterangan dan/atau dokumen apapun dalam rangka pelaksanaan atau selama proses sidang arbitrase) sampai dengan adanya putusan arbitrase yang final dan mengikat;\n\nV.	Kecuali disyaratkan berdasarkan hukum yang berlaku atau diminta berdasarkan permintaan, keputusan atau penetapan resmi yang diterbitkan, dikeluarkan atau dibuat oleh pengadilan atau instansi pemerintah yang berwenang, selama proses penyelesaian Perselisihan sebagaimana diatur di atas sampai dengan adanya keputusan yang sah, final dan mengikat Pihak Pertama dan Pihak Kedua, maka Pihak Pertama dan Pihak Kedua wajib untuk merahasiakan segala informasi terkait dengan Perselisihan maupun proses penyelesaiannya dan karenanya dilarang untuk dengan cara apapun menginformasikan, memberitahukan atau mengumumkan kepada pihak manapun adanya Perselisihan tersebut maupun proses penyelesaiannya termasuk tetapi tidak terbatas melalui media massa (koran, televisi atau media lainnya) dan/atau media sosial. Jika Anda melanggar ketentuan butir (f) ini, Anda dengan ini mengetahui dan setuju bahwa seluruh atau sebagian hak Anda untuk menggunakan Layanan, Aplikasi, Akun dan/atau PIN dapat sewaktu-waktu diakhiri atau dinon-aktifkan oleh Kami baik untuk sementara waktu maupun untuk seterusnya.\n\nX. KETENTUAN LAIN\n\nI.	Untuk setiap masalah yang berkaitan dengan Transaksi, Layanan dan/atau Akun, Anda dapat meminta bantuan pada atau dari Contact Center atau Layanan Pengguna MuMu Kami pada nomor [+622129517760]. Anda juga dapat melakukan pengaduan tertulis kepada Kami ke alamat email sebagai berikut [hello@hike.id] dengan wajib menyertakan bukti pendukung yang dapat Kami terima untuk penyampaian pengaduan tertulis tersebut.\n\nII.	Seluruh persetujuan, kuasa, wewenang dan/atau hak yang Anda berikan kepada Kami dalam Syarat dan Ketentuan ini tidak dapat berakhir karena alasan apapun termasuk karena alasan-alasan sebagaimana dimaksud dalam Pasal 1813, 1814, dan 1816 Kitab Undang-Undang Hukum Perdata selama Anda masih menggunakan Layanan atau Aplikasi atau masih menggunakan dan/atau memiliki Akun.\n\nIII.	Anda dengan ini membebaskan Kami dari seluruh Klaim sehubungan dengan pelaksanaan segala tindakan Kami berdasarkan kuasa, wewenang dan/atau hak yang Anda berikan kepada Kami dalam atau berdasarkan Syarat dan Ketentuan maupun pelaksanaan hak atau wewenang Kami berdasarkan Syarat dan Ketentuan.
+
+
+
+    </string>
+    <string name="txt_saya_setuju">Saya setuju dengan syarat...</string>
+    <string name="txt_intruksi">1. Masukkan kartu, pilih bahasa, kemudian masukkan PIN anda\n\n2. Pilih menu transfer\n\n3. Pilih Bank  Mandiri kode Bank 008\n\n4. Masukkan nomor rekening\n\n5. Masukkan nominal transfer\n\n6. Selesai</string>
+    <string name="rek_dompet_dhuafa">DOMPET DHUAFA</string>
+    <string name="donasi_berhasil">Selemat Donasi Telah Berhasil Di Proses</string>
+    <string name="donasi_error">Terjadi Kesalahan, Mohon Periksa Kembali Data Yang Anda Masukkan</string>
+    <string name="input_error">Harap Masukkan Data Dengan Benar</string>
+    <string name="txt_akad_donasi">Saya menitipkan amanah donasi kepada Dompet Dhuafa mohon disampaikan dan digunakan sesuai dengan ketentuan syariah</string>
+
+
+    <string name="info_message_daftar">Belum punya akun? <u>Daftar disini</u></string>
+
+    <string name="welcome_suggestion">Halo, Selamat datang :)</string>
+    <string name="welcome_suggestion_sub">Mari mulai pendaftaran anda dengan informasi dibawah ini</string>
+    <string name="email_field">Alamat Email</string>
+    <string name="phone_field">Nomor Handphone</string>
+    <string name="next_button">Selanjutnya</string>
+    <string name="done_button">Selesai</string>
+    <string name="prev_button">Kembali</string>
+
+    <string name="info_identity_label">Siapa nama anda?</string>
+
+    <string name="lahir_label">Kelahiran anda</string>
+    <string name="lahir_label_sub">Kapan dan dimana anda dilahirkan?</string>
+    <string name="ktp_label">Validasi KTP</string>
+    <string name="ktp_label_sub">Cek KTP anda untuk validasi data</string>
+
+
+    <string name="ktp_button">Ambil KTP</string>
+    <string name="nama_nasabah_field">Nama Lengkap</string>
+    <string name="nama_singkat_field">Panggilan</string>
+    <string name="jenis_kelamin_field">Jenis Kelamin</string>
+    <string name="agama_field">Agama</string>
+    <string name="tempat_lahir_field">Tempat Lahir</string>
+    <string name="tanggal_lahir_field">Tanggal Lahir</string>
+    <string name="tanggal_akhir_field">Tanggal berakhir KTP</string>
+    <string name="nomor_ktp">Nomor KTP Terdaftar</string>
+    <string name="alamat_ktp_field">Alamat sesuai KTP</string>
+    <string name="status_kawin_field">Status perkawinan</string>
+    <string name="pekerjaan_field">Pekerjaan</string>
+    <string name="gender_male">Laki-laki</string>
+    <string name="gender_female">Perempuan</string>
+    <string name="nama_ibu_field">Nama Ibu</string>
+    <string name="alamat_field">Alamat</string>
+    <string name="selfie_label">Cheese…</string>
+    <string name="selfie_label_sub">Yuk ambil selfie untuk validasi datamu</string>
+
+    <string name="username_input_label">Info Akun</string>
+    <string name="username_input_label_sub">Masukan username dan password untuk login</string>
+
+    <string name="username_field">Nama Akun</string>
+    <string name="password_field">Kata Sandi</string>
+
+    <string name="register_berhasil">Selamat, akun anda sudah dibuat. Silahkan login dan nikmati fitur kami.</string>
+
+    <string name="welcome_activation">Aktivasi Wallet</string>
+    <string name="selfie_take">Ambil Selfie</string>
+
+    <string name="aditional_label">Informasi Tambahan</string>
+    <string name="aditional_label_sub">Tambahan informasi untuk kelengkapan data</string>
+
+    <string name="rt_field">RT</string>
+    <string name="rw_field">RW</string>
+    <string name="kode_pos_field">Kode Pos</string>
+    <string name="propinsi_field">Propinsi</string>
+    <string name="kodya_field">Kodya</string>
+    <string name="kecamatan_field">Kecamatan</string>
+    <string name="kelurahan_field">Kelurahan</string>
+    <string name="sumber_dana_field">Sumber Dana</string>
+    <string name="tujuan_dana_field">Tujuan Dana</string>
+    <string name="penghasilan_field">Penghasilan Tahunan</string>
+
+    <string name="dompet_name">Dompet %s</string>
+    <string name="verifikasi_email">Verifikasi Email</string>
+
+    <string-array name="agama_list">
+        <item>Islam</item>
+        <item>Protestan</item>
+        <item>Kristen</item>
+        <item>Hindu</item>
+        <item>Budha</item>
+        <item>Lainnya</item>
+    </string-array>
+
+
+    <string-array name="tujuan_dana_list">
+        <item>PENGELUARAN RUTIN PRIBADI</item>
+        <item>BISNIS</item>
+        <item>PEMBAYARAN</item>
+    </string-array>
+
+    <string-array name="sumber_dana_list">
+        <item>HASIL USAHA</item>
+        <item>HASIL INVESTASI</item>
+        <item>LAINNYA</item>
+        <item>GAJI</item>
+        <item>TABUNGANG PRIBADI</item>
+        <item>HASIL PERDAGANGAN/JASA/USAHA</item>
+    </string-array>
+
+    <string-array name="penghasilan_pertahun_list">
+        <item>1 &lt; 15 Juta</item>
+        <item>15 – 25 Juta</item>
+        <item>&gt; 25 – 400 Juta</item>
+        <item>&gt; 400 Juta</item>
+    </string-array>
+
+    <string-array name="pekerjaan_list">
+        <item>PELAJAR/MAHASISWA</item>
+        <item>IBU RUMAH TANGGA</item>
+        <item>KARYAWAN SWASTA</item>
+        <item>PEGAWAI NEGERI</item>
+        <item>TNI/POLRI</item>
+        <item>PEJABAT NEGARA/DAERAH</item>
+        <item>PENSIUNAN</item>
+        <item>PENGUSAHA PABRIKAN</item>
+        <item>PEDAGANG</item>
+        <item>PENGUSAHA JASA</item>
+        <item>DOKTER</item>
+        <item>PENGACARA</item>
+        <item>AKUNTAN</item>
+        <item>WARTAWAN</item>
+        <item>SENIMAN</item>
+        <item>NOTARIS</item>
+        <item>PROFESIONAL LAINNYA</item>
+        <item>LAINNYA</item>
+    </string-array>
+
+    <string-array name="kawin_list">
+        <item>Lajang</item>
+        <item>Menikah</item>
+        <item>Janda/Duda</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_8dp"
+    android:background="@color/md_white_1000"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context="id.co.hike.apps.android_mpos_mumu.features.receipt_invoice.ReceiptInvoice">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/strukContainer"
+        ></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:background="@drawable/black_underline"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kirim ke:" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etEmailPelanggan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukkan email pelanggan"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/text_style"
+                    android:textColorHint="@color/text_style"
+                    app:backgroundTint="@android:color/transparent"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_7dp"
+                android:weightSum="10">
+                <Button
+                    android:id="@+id/btnSelesai"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:background="@drawable/btn_style_primary_mumu"
+                    android:text="@string/btn_selesai"
+                    android:textAllCaps="false"
+                    android:textColor="@color/md_white_1000" />
+                <LinearLayout
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></LinearLayout>
+                <Button
+                    android:id="@+id/btnPrint"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:background="@drawable/btn_style_primary_mumu"
+                    android:text="@string/btn_print"
+                    android:textAllCaps="false"
+                    android:textColor="@color/md_white_1000"
+                   />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgStruk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

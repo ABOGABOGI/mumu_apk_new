@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/color_primary_mumu"
+            android:textSize="18dp"
+            android:text="Bayar tagihan listrik" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:text="No.Meter/ID Pel" />
+
+        <EditText
+            android:id="@+id/etIdPelangganPostPaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:hint="@string/contoh_id_pelanggan"
+            android:inputType="number"
+            android:maxLength="12" />
+
+        <Button
+            android:id="@+id/btnCekTagihan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/_20dp"
+
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@color/color_primary_mumu"
+            android:padding="15dp"
+            android:text="@string/btn_cek_tagihan"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_margin="16dp"
+            android:id="@+id/shimmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_30dp"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginRight="@dimen/_20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    layout="@layout/item_tagihan_layout_placeholder"/>
+                <include
+                    layout="@layout/item_tagihan_layout_placeholder"/>
+
+                <include
+                    layout="@layout/item_tagihan_layout_placeholder"/>
+                <include
+                    layout="@layout/item_tagihan_layout_placeholder"/>
+
+                <include
+                    layout="@layout/item_tagihan_layout_placeholder"/>
+
+                <include
+                    layout="@layout/item_tagihan_layout_placeholder"/>
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvListrikTagihan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_30dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            />
+
+        <Button
+            android:id="@+id/bayarBtn"
+            android:text="Bayar"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:background="@color/color_primary_mumu"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

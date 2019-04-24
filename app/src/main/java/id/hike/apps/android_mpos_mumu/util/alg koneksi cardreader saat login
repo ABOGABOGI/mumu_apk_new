@@ -1,0 +1,8 @@
+landing page, ada prefs aja.
+tapi ada tombol juga untuk konek ulang.
+
+halaman checkconnection:
+- cek koneksi bluetooth -> failed
+- cek koneksi card reader
+	- kalo pas mau pairing ke card reader, kan tergantung orangnya. karena card readernya saat pairing dia tidak kirim balik -> ini failed
+	- kalo sudah pairing -> card reader langsung result sukses

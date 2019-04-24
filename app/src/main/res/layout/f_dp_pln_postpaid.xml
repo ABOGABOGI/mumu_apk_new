@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_white_1000"
+    android:paddingBottom="@dimen/_5dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44dp"
+        android:background="@color/md_grey_100">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="Detail Pembayaran"
+            android:textColor="@color/brick"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:paddingLeft="@dimen/_30dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:text="ID Pelanggan"/>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:text="Nama"/>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:text="Tarif / Daya"/>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:text="Kwh"/>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:text="Alamat"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingRight="@dimen/_10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvIdPelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:gravity="center_vertical"
+                android:hint="123456781"
+                android:textSize="@dimen/font_reg"/>
+
+            <TextView
+                android:id="@+id/tvNama"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:gravity="center_vertical"
+                android:hint="Budi Pambudi"
+                android:textSize="@dimen/font_reg"/>
+
+            <TextView
+                android:id="@+id/tvTarif"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:gravity="center_vertical"
+                android:hint="R4/1234567"
+                android:textSize="@dimen/font_reg"/>
+
+            <TextView
+                android:id="@+id/tvKwh"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:gravity="center_vertical"
+                android:hint="4"
+                android:textSize="@dimen/font_reg"/>
+
+            <TextView
+                android:id="@+id/tvAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:hint="Jalan Medan merdeka"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_reg"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="@color/md_grey_500"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:paddingLeft="@dimen/_30dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:text="Total Tagihan"/>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:text="Biaya Admin"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingRight="@dimen/_10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvTagihan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:gravity="center_vertical"
+                android:hint="60,000"
+                android:textSize="@dimen/font_reg"/>
+
+            <TextView
+                android:id="@+id/tvBiayaAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:gravity="center_vertical"
+                android:hint="2,500"
+                android:textSize="@dimen/font_reg"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/md_grey_500"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:paddingLeft="@dimen/_30dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:text="Total"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingRight="@dimen/_10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:gravity="center_vertical"
+                android:hint="Rp. 62,500"
+                android:textSize="@dimen/font_reg"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:textAllCaps="false"
+        android:background="@color/btn_style"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bayar"
+        android:id="@+id/btnBayar"
+        android:textColor="@color/md_white_1000"/>
+
+</LinearLayout>

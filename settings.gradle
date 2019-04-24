@@ -1,0 +1,2 @@
+include ':app', ':slidetabslibrary', ':ctpaylibrary-1.0.10', ':swilibrary-release'
+include ':app', ':slidetabslibrary'

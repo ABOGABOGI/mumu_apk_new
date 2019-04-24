@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <layer-list>
+        <item>
+            <shape>
+                <solid android:color="@color/baroka_grey"/>
+                <corners android:radius="6dp"/>
+
+            </shape>
+        </item>
+        <item>
+            <bitmap android:src="@drawable/ic_dropdown"
+                android:gravity="clip_vertical|right"/>
+        </item>
+    </layer-list>
+</item>
+</selector>
+

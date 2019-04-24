@@ -1,0 +1,59 @@
+kode AD
+
+=== prosedur 1: ok
+hal modelStrukSummary
+
+saat hal menampilkan list item belanja
+1. rv menampilkan item yg flagnya tidak delete
+
+=== prosedur 1b:
+ada item yg didelete di list belanja
+
+1. barang yg didelete diubah ke flag delete
+2. recyclerview direfresh lagi tapi tidak get item yg flagnya delete
+
+
+=== prosedur 1c:
+tekan tombol simpan, batal, bayar
+
+loop kirim barang yg statusnya delete
+
+
+=== prosedur 2: ok
+DFDetailProduk
+pas teken tombol beli
+
+a) saat item masih belum ada di tabel transa
+maka insert
+
+b) saat ada item yg sama lagi && flag item statusnya delete && transqueue
+maka dia insert
+
+c) saat item sudah ada ditabel transa && item statusnya bukan delete && transqueue
+maka update
+
+
+==== prosedur 3
+modelStrukSummary
+tombol bayar
+
+a) detailId=0 && nonDeleted
+buy product
+
+b) detailId=not 0 && nonDeleted
+update product
+
+c) item status deleted
+kirim barang yg didelete
+
+=== prosedur 4
+saat teken tombol bayar, batal, simpan di hal modelStrukSummary
+a) delete item yg flagnya delete di tabel transa untuk transId yg berlaku saat itu
+
+=== prosedur 5
+//saat tekan tombol bayar
+delete transaction list
+
+=== prosedur 6
+saat tekan tombol simpan, batal di modelStrukSummary
+clear prefences

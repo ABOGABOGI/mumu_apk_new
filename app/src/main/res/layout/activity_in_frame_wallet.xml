@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:inputType="phone"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    tools:context="id.co.hike.apps.android_mpos_mumu.features.pin_verifikasi.InFrameWalletActivity">
+
+    <include android:id="@+id/toolbar" layout="@layout/ab_back_w_title"/>
+
+    <WebView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/webview"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

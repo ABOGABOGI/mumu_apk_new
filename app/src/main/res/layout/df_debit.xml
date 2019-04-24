@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembayaran dengan"/>
+
+    <TextView
+        android:textSize="@dimen/font_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Debit Card"
+        android:textColor="@color/text_style"
+        style="@style/TextViewBold"
+        />
+
+    <TextView
+        android:id="@+id/tvSuggest"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please swipe card"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_payment_method"
+        android:layout_marginBottom="@dimen/_10dp"/>
+
+    <LinearLayout
+        android:id="@+id/contentDebit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_5dp">
+
+        <Button
+            android:enabled="true"
+            android:id="@+id/btnBatal"
+            android:background="@drawable/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:text="Close"
+            android:textColor="@color/md_white_1000"
+            android:layout_marginRight="@dimen/_10dp"/>
+
+        <Button
+            android:enabled="true"
+            android:id="@+id/btnDebitBayar"
+            android:background="@drawable/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:text="Bayar"
+            android:textColor="@color/md_white_1000"
+            android:layout_marginRight="@dimen/_10dp"/>
+
+        <Button
+            android:enabled="false"
+            android:id="@+id/btnDebitKonfirmasi"
+            android:background="@drawable/darkgray_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:text="Konfirmasi"
+            android:paddingRight="@dimen/_10dp"
+            android:paddingLeft="@dimen/_10dp"
+            android:textColor="@color/md_white_1000" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linConnectionStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tvConnectionStatus"
+            android:textSize="@dimen/_10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="menghubungkan ke EDC "/>
+        <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/gifDot"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:background="@drawable/dot_loading_30px"/>
+    </LinearLayout>
+
+</LinearLayout>

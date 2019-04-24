@@ -1,0 +1,124 @@
+<LinearLayout tools:context="id.co.hike.apps.android_mpos_mumu.features.profil.GantiProfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btnTakeFoto"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="7dp"
+                    android:src="@drawable/u3285" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="Sentuh foto untuk mengganti foto profil"
+/>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:paddingLeft="@dimen/_30dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:text="Nama"/>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:text="Email"/>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:text="Telepon"/>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:text="Alamat"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingRight="@dimen/_10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:hint="Username"
+                android:textSize="@dimen/font_reg"
+                android:lines="1"/>
+
+            <EditText
+                android:id="@+id/editText_email_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:hint="Email"
+                android:textSize="@dimen/font_reg"
+                android:lines="1"/>
+
+            <EditText
+                android:id="@+id/etTelepon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:hint="Telepon"
+                android:textSize="@dimen/font_reg"
+                android:lines="1"/>
+
+            <EditText
+                android:id="@+id/etAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35dp"
+                android:hint="Alamat"
+                android:textSize="@dimen/font_reg"
+                android:lines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:background="@drawable/btn_style"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:id="@+id/btnSimpan"
+        android:textColor="@color/md_white_1000"/>
+    </LinearLayout>

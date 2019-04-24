@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <io.fotoapparat.view.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <id.hike.apps.android_mpos_mumu.features.kamera.SelfieViewPort
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_weight=".5"
+        android:id="@+id/selfieViewPort"
+        android:background="#7f000000"/>
+
+    <id.hike.apps.android_mpos_mumu.features.kamera.KTPViewPort
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:id="@+id/ktpViewPort"
+        android:background="#7f000000"/>
+
+    <Button
+        android:id="@+id/ambilFoto"
+        android:text="Ambil"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

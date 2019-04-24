@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembayaran dengan"
+        android:layout_marginBottom="@dimen/_5dp"/>
+
+    <TextView
+        android:textSize="@dimen/font_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QR-Code"
+        android:textColor="@color/text_style"
+        style="@style/TextViewBold"
+        android:layout_marginBottom="@dimen/_20dp"/>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_20dp"
+        android:padding="@dimen/_5dp"
+        android:background="@drawable/stroke_qr_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginBottom="@dimen/_3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pelanggan"/>
+
+            <TextView
+                style="@style/TextViewBold"
+                android:id="@+id/tvNamaPelanggan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Pelanggan"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/lineSeparatorKanan"
+            android:layout_marginRight="@dimen/_5dp"
+            android:layout_marginLeft="@dimen/_5dp"
+            android:background="@color/brick" />
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginBottom="@dimen/_3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah yang akan dibayar:"/>
+
+            <TextView
+                style="@style/TextViewBold"
+                android:id="@+id/tvHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 230.000,-"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:padding="@dimen/_5dp"
+        android:background="@color/md_white_1000"
+        android:scaleType="fitCenter"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/qr"
+        android:layout_marginBottom="@dimen/_15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batal"
+        android:textColor="@color/text_style_light"
+        android:id="@+id/btnBatal"
+        android:background="@drawable/darkgray_button"/>
+</LinearLayout>

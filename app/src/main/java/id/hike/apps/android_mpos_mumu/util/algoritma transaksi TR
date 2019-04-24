@@ -1,0 +1,91 @@
+PROSEDUR TR (Transaksi)
+
+=== btn transaksi baru ditekan di hal landing page
+1. btn transaksi baru:
+    transaksi id baru, kostumer default, kostumer id default.
+    transaksi id disimpan di secPrefs
+
+=== hal home
+2. pilih modelStrukProduk & belum pilih kostumer:
+    jika modelStrukProduk id sudah ada dibeli, maka update saja yg ada di DB.
+    kalo belum ada, maka hanya insert saja.
+
+    flag open, flag unlock
+    pakai id transaksi lama, pakai kostumer default, pakai kostumer id default->
+    update semua nama kostumer & kostumer id yang pakai id transaksi tersebut
+3. saat pilih modelStrukProduk & memilih kostumer(sebelumnya belum pilih kostumer):
+    jika modelStrukProduk id sudah ada dibeli, maka update saja yg ada di DB.
+    kalo belum ada, maka hanya insert saja.
+
+    flag open, flag unlock
+    pakai id transaksi lama, pakai kostumer pilihannya, pakai kostumer idnya->
+    update semua nama kostumer & kostumer id yang pakai id transaksi tersebut
+
+=== hal modelStrukSummary
+4. saat kasir tekan BUTTON SIMPAN di halaman modelStrukSummary & kostumer guest:
+    -   semua id transaksi yg berlaku saat itu/sama diubah ke flag unlock & flag postpone
+    -   clear prefs nama kostumer, kostumerid
+
+   -> kembali ke hal home
+
+5. saat kasir tekan BUTTON SIMPAN di halaman modelStrukSummary & kostumer sudah terdaftar:
+    -   semua id transaksi yg berlaku saat itu/sama diubah ke flag unlock & flag postpone
+    -   clear prefs nama kostumer, kostumerid
+
+    -> kembali ke hal home
+
+6. saat kasir tekan BUTTON BATAL di halaman modelStrukSummary & kostumer guest / terdaftar
+    -   alasan_batal(disimpan di prefs), semua transaksi idnya, diubah ke flag cancel, flag lock
+    -   clear prefs nama kostumer, kostumerid
+
+7. saat memilih kostumer / menambah kostumer saat kostumer masih guest
+    semua transaksi idnya untuk nama kostumer dan kostumer id diubah ke nama kostumer tersebut
+
+8. untuk kostumer yang sudah dipilih. dihalaman modelStrukSummary tersebut dilock pemilihan kostumernya.
+
+9.  BTN TAMBAH di hal modelStrukSummary & kostumer guest
+    kembali ke hal home dengan transaksi id yang sama
+
+10. BTN TAMBAH di hal modelStrukSummary & kostumer sudah daftar
+    kembali ke hal home dengan transaksi id yang tersimpan
+
+11. BTN BAYAR di hal modelStrukSummary & kostumer guest
+    semua transaksi id yang berlangsung diubah ke flag lock dan flag open
+    -> hal payment
+
+12. BTN BAYAR di hal modelStrukSummary & kostumer terdaftar
+    semua transaksi id yang berlangsung diubah ke flag lock dan flag open
+    -> hal payment
+
+=== Hal payment
+
+13.  BTN BATAL & kostumer guest
+    alasan_batal(disimpan di prefs), semua transaksi idnya, diubah ke flag cancel, flag lock
+    -> ke hal landing page
+
+14.  BTN BATAL & kostumer terdaftar
+    alasan_batal(disimpan di prefs), semua transaksi idnya, diubah ke flag cancel, flag lock
+    -> ke hal landing page
+
+15.  saat memilih kostumer / menambah kostumer saat kostumer masih guest
+    semua transaksi idnya untuk nama kostumer dan kostumer id diubah ke nama kostumer tersebut
+
+16.  btn ubah & kostumer guest
+    -> halaman modelStrukSummary
+    info: transaksi yang sudah masuk ke hal payment, sudah dilock. dan saat ke halaman ubah
+    , transaksi tersebut tidak bisa diedit lagi harganya. karena permintaan tawar menawar
+    sudah terjadi di halaman modelStrukSummary. flag ini sudah di ubah di TR:11,12.
+
+17.  btn ubah & kostumer terdaftar
+    -> halaman modelStrukSummary
+
+=== Hal landing page
+18. btn pelanggan baru ditekan
+    saat suatu list pelanggan ditekan
+
+    transaksi id baru, nama kostumer & kostumer id didapatkan dari list tersebut
+    transaksi id,  nama kostumer, kostumer id disimpan di secPrefs
+
+
+19. kalo kostumer keluar dari aplikasi & ada di hal home
+    update flag cancel dengan mengirimkan transid yang berlaku saat itu

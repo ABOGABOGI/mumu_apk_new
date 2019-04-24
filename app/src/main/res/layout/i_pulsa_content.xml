@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_weight="0.5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDescription"
+            style="@style/TextViewBold"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:background="@color/color_primary_mumu"
+            android:gravity="center_vertical|center_horizontal"
+            android:keepScreenOn="false"
+            android:text="10.000"
+            android:textColor="@color/baroka_white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSalesPrice"
+            android:layout_width="406dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/color_primary_dark_mumu"
+
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Rp. 12.500"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</FrameLayout>
+

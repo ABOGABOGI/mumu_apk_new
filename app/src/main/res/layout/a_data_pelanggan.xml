@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".features.pelanggan.Pelanggan">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_primary_mumu"
+        android:paddingLeft="@dimen/_10dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/vector_drawable_left_arrow"
+            android:tint="@color/md_white_1000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Data Pelanggan"
+            android:textColor="@color/md_white_1000" />
+
+        <ImageView
+            android:id="@+id/btnTambahPelanggan"
+            android:layout_width="27dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/ic_icon_add_user" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/toolbar2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:text="Total Pelanggan"
+                android:textColor="@color/md_white_1000" />
+
+            <TextView
+                android:id="@+id/tvTotalPelanggan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:paddingRight="40dp"
+                android:text="0"
+                android:textColor="@color/md_white_1000"
+                android:textSize="20dp" />
+
+
+        </FrameLayout>
+
+        <include layout="@layout/barsearch_pelanggan" />
+
+        <com.omadahealth.github.swipyrefreshlayout.library.SwipyRefreshLayout
+            android:id="@+id/swipyrefreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srl_direction="bottom">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPelanggan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+            </ScrollView>
+        </com.omadahealth.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+    </LinearLayout>
+</LinearLayout>

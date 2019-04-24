@@ -1,0 +1,40 @@
+=== SUMMARY ===
+1.
+=>barang didelete && barang beli dikirim. cekstok()
+<=status false
+<=data.stok = ...
+~item sesuai produkid di sqlite diupdate stoknya
+~item dgn stok kosong, background jd merah
+~item dgn stok update, background jd biru
+
+2.
+2A.
+A) item dgn stok kosong (bg merah)
+if barang yg stoknya 0 && status delete -> tidak dikirim
+jadi yg stoknya kosong, harus dihapus dulu itemnya di keranjang belanja
+
+=>barang yg didelete, barang dibeli. cekstok()
+<=status true
+
+B) item dgn stok diupdate (bg biru)
+kasir menginfokan ke pembeli, bahwa produk tsb, stoknya hanya tersedia segitu.
+=>barang yg didelete, barang dibeli. cekstok()
+<=status true
+
+2B.
+A)
+item dengan stok 0 di sqlite
+
+=== PAYMENT ===
+1. Cek stok di payment
+a) klik tombol bayar
+kalo misalnya stoknya habis di payment
+
+> muncul dialog bahwa produk yang habis adalah bla..bla.. terus ada tombol submit
+tulisan di stoknya adalah
+List item update:
+Beberapa item dengan stok kosong:
+- Samsung G5 (Stok: 0)
+- Lenovo K5 (Stok: 0)
+
+[Submit] -> btnUbah.performClick();

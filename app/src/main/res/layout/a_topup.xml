@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_primary_mumu"
+        autofit:layout_constraintEnd_toEndOf="parent"
+        autofit:layout_constraintStart_toStartOf="parent"
+        autofit:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_back_topUp"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:src="@mipmap/ic_back_button"
+            android:tint="@android:color/white"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Top up"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Top Up Saldo"
+        android:textSize="18sp"
+        autofit:layout_constraintStart_toStartOf="parent"
+        autofit:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <EditText
+        android:id="@+id/edtTopUpAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/color_primary_mumu"
+        android:hint="Rp 0"
+        android:inputType="number"
+        android:textSize="24sp"
+        autofit:layout_constraintEnd_toEndOf="parent"
+        autofit:layout_constraintStart_toStartOf="parent"
+        autofit:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <Button
+        android:id="@+id/topup_btn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_style_primary_mumu"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Top Up"
+        android:textColor="@android:color/white"
+        autofit:layout_constraintEnd_toEndOf="parent"
+        autofit:layout_constraintStart_toStartOf="parent"
+        autofit:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Min. Top Up Saldo Rp. 50.000,- dan kelipatan Rp. 10.000"
+        android:textColor="@color/color_primary_mumu"
+        android:textSize="12sp"
+        autofit:layout_constraintStart_toStartOf="parent"
+        autofit:layout_constraintTop_toBottomOf="@+id/edtTopUpAmount" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:elevation="4dp"
+        autofit:cardBackgroundColor="@color/color_primary_mumu"
+        autofit:cardCornerRadius="6dp"
+        autofit:layout_constraintEnd_toEndOf="parent"
+        autofit:layout_constraintHorizontal_bias="0.0"
+        autofit:layout_constraintStart_toStartOf="parent"
+        autofit:layout_constraintTop_toBottomOf="@+id/textView36">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/dompet_name"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                autofit:layout_constraintEnd_toEndOf="@+id/saldoCurrent"
+                autofit:layout_constraintStart_toStartOf="@+id/saldoCurrent"
+                autofit:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/saldoCurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Rp. 0"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                autofit:layout_constraintBottom_toBottomOf="parent"
+                autofit:layout_constraintEnd_toEndOf="parent"
+                autofit:layout_constraintStart_toStartOf="parent"
+                autofit:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="8dp"
+                android:tint="@android:color/white"
+                autofit:layout_constraintBottom_toBottomOf="@+id/textView34"
+                autofit:layout_constraintEnd_toStartOf="@+id/textView34"
+                autofit:layout_constraintTop_toTopOf="@+id/textView34"
+                autofit:srcCompat="@drawable/ic_dompet" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Balance"
+        android:textSize="18sp"
+        autofit:layout_constraintStart_toStartOf="parent"
+        autofit:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

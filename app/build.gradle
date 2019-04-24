@@ -1,0 +1,171 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "id.hike.apps.android_mpos_mumu"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 2
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        flavorDimensions "default"
+
+    }
+    if (project.hasProperty('devBuild')) {
+        splits.abi.enable = false
+        splits.density.enable = true
+        aaptOptions.cruncherEnabled = true
+    }
+    dexOptions {
+        javaMaxHeapSize = '1g'
+    }
+
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+    productFlavors {
+        umu {
+            dimension "default"
+            minSdkVersion 21
+            applicationId "id.hike.apps.android_mpos_umu"
+            versionCode 2
+            versionName "1.0"
+            versionNameSuffix "-umu"
+            manifestPlaceholders = [
+                    appIcon: "@mipmap/logo"
+            ]
+            ext {
+                variable = [debug: "umu-debug value", release: "umu-release value"]
+                header = "appUangMuhammadiyah"
+            }
+        }
+
+        mumu {
+            dimension "default"
+            minSdkVersion 21
+            applicationId "id.hike.apps.android_mpos_mumu"
+            versionCode 2
+            versionName "1.0"
+            versionNameSuffix "-mumu"
+            manifestPlaceholders = [
+                    appIcon: "@mipmap/logo"
+            ]
+            ext {
+                variable = [debug: "mumu-debug value", release: "mumu-release value"]
+                header = "appDompetDhuafa"
+            }
+        }
+    }
+    applicationVariants.all { variant ->
+        def flavor = variant.productFlavors[0]
+        variant.buildConfigField "String", "flavor", "\"${flavor.ext.variable[variant.buildType.name]}\""
+        variant.buildConfigField "String", "appHeader", "\"${flavor.ext.header}\""
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            useProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '28.0.3'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0-alpha4', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation project(':slidetabslibrary')
+    implementation project(':ctpaylibrary-1.0.10')
+    //    implementation 'com.github.firdausmaulan:GlideSlider:1.0.2'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0-rc01'
+    implementation 'org.sufficientlysecure:html-textview:3.5'
+    //implementation 'uk.co.chrisjenx:calligraphy:2.2.0'
+    implementation 'io.github.inflationx:calligraphy3:3.0.0'
+    implementation 'io.github.inflationx:viewpump:1.0.0'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.2@aar'
+    implementation 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'pub.devrel:easypermissions:0.4.3'
+    implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.github.omadahealth:swipy:1.2.3@aar'
+    implementation 'com.timqi.sectorprogressview:library:2.0.1'
+    implementation 'com.scottyab:secure-preferences-lib:0.1.4'
+    implementation 'com.github.ybq:Android-SpinKit:1.1.0'
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.thoughtbot:expandablerecyclerview:1.3'
+    implementation 'me.grantland:autofittextview:0.2.1'
+//    implementation 'com.google.android.gms:play-services-ads:9.0.2'
+    implementation 'com.iceteck.silicompressorr:silicompressor:2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation 'com.google.dagger:dagger:2.15'
+    implementation 'com.google.dagger:dagger-android:2.15'
+    implementation 'com.github.myinnos:ImageSliderWithSwipes:1.0.2'
+    implementation 'io.fotoapparat.fotoapparat:library:1.4.1'
+    testImplementation 'junit:junit:4.12'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.11'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.11'
+    implementation 'joda-time:joda-time:2.9.4'
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.1'
+    implementation 'androidx.annotation:annotation:1.0.1'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'androidx.mediarouter:mediarouter:1.0.0'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.test:runner:1.1.1'
+    implementation 'androidx.test.espresso:espresso-contrib:3.1.0'
+    implementation 'androidx.exifinterface:exifinterface:1.0.0'
+    //implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'androidx.browser:browser:1.0.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.10'
+    implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+    implementation 'com.jakewharton:butterknife:9.0.0-SNAPSHOT'
+    implementation 'com.ernestoyaquello.stepperform:vertical-stepper-form:2.1.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-SNAPSHOT'
+//    implementation 'com.google.firebase:firebase-core:16.0.7'
+//    implementation 'com.google.firebase:firebase-auth:16.1.0'
+//    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.github.TechFreak:WizardPager:1.0.3'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.6'
+    implementation 'com.facebook.shimmer:shimmer:0.4.0'
+    implementation 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    implementation 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar'
+    implementation 'com.github.jkwiecien:EasyImage:1.3.1'
+    // untuk menjalankan gif
+    implementation project(':swilibrary-release')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+//apply plugin: 'com.google.gms.google-services'
+

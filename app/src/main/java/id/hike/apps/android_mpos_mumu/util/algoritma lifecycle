@@ -1,0 +1,8 @@
+prosedur LC
+
+=== hal modelStrukProduk
+1. jika belum memilih apa-apa, tapi langsung keluar aplikasi
+    kirim flag cancel untuk transid yg berlaku saat itu
+
+2. hal modelStrukSummary
+    mengirim flag postpone untuk transid yang berlaku saat itu

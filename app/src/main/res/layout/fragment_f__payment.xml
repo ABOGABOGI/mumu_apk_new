@@ -1,0 +1,453 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="id.co.hike.apps.android_mpos_mumu.features.payment.F_Payment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/toolbar">
+
+        <TextView
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:layout_marginRight="@dimen/_5dp"
+            android:text="Contact"
+            android:id="@+id/tvContact"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            style="@style/TextViewBold"
+            android:textColor="@color/md_white_1000"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"/>
+
+        <TextView
+            android:id="@+id/tvTotalHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="15dp"
+            android:text="Rp50.000"
+            android:textSize="@dimen/font_mediumbig"
+            android:textColor="@color/md_white_1000" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/md_white_1000"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/btnCash"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                   android:layout_marginLeft="@dimen/_10dp"
+                    android:text="Cash"
+                    style="@style/TextViewBold"
+                    android:textColor="@color/text_style2" />
+
+                <LinearLayout
+                    android:id="@+id/contentCash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp" />
+
+                        <EditText
+                            android:text="0"
+                            android:id="@+id/edInputCash"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:minWidth="150dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/laySuggestButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <ViewAnimator
+                        android:id="@+id/vaInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <!--TIDAK CUKUP-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/list_belanja_dark"
+                            android:gravity="center"
+                            android:padding="13dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/u3175" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Uang tidak mencukupi!"
+                                android:textColor="@color/md_red_500" />
+
+
+                        </LinearLayout>
+
+                        <!--KEMBALIAN-->
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/list_belanja_dark"
+                            android:padding="13dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kembalian:" />
+
+                            <TextView
+                                android:id="@+id/tvKembalian"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:text="Rp0" />
+                        </FrameLayout>
+
+                    </ViewAnimator>
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:textAllCaps="false"
+                            android:id="@+id/btnCashBatal"
+                            android:layout_column="0"
+                            android:layout_marginRight="5dp"
+                            android:layout_row="2"
+                            android:background="@drawable/btn_style"
+                            android:text="Batal"
+                            android:textColor="@color/md_white_1000" />
+
+                        <Button
+                            android:textAllCaps="false"
+                            android:id="@+id/btnCashUbah"
+                            android:layout_column="1"
+                            android:layout_marginRight="5dp"
+                            android:layout_row="2"
+                            android:background="@drawable/btn_style"
+                            android:text="Ubah"
+                            android:textColor="@color/md_white_1000" />
+
+                        <Button
+                            android:textAllCaps="false"
+                            android:id="@+id/btnCashBayar"
+                            android:layout_column="2"
+                            android:layout_row="2"
+                            android:background="@drawable/gray_button"
+                            android:enabled="false"
+                            android:text="Bayar"
+                            android:textColor="@color/md_white_1000" />
+                    </GridLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="@dimen/_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/bg_metode_pembayaran_lain">
+                    <TextView
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_marginBottom="@dimen/_10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Metode Pembayaran Lain"
+                        style="@style/TextViewBold"
+                        android:textColor="@color/text_style"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_marginBottom="@dimen/_5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:layout_marginRight="@dimen/_10dp">
+                            <LinearLayout
+                                android:id="@+id/btnDebit"
+                                android:background="@drawable/white_button"
+                                android:padding="@dimen/_10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginRight="@dimen/_5dp">
+                                <ImageButton
+                                    android:scaleType="fitCenter"
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_debit"
+                                    android:background="@android:color/transparent"
+                                    android:tint="@color/color_primary_mumu"
+                                    android:layout_marginBottom="@dimen/_5dp"/>
+
+                                <TextView
+                                    android:textColor="@color/text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Debit"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnCreditCard"
+                                android:background="@drawable/white_button"
+                                android:padding="@dimen/_10dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+                                <ImageButton
+                                    android:scaleType="fitCenter"
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_credit_card"
+                                    android:background="@android:color/transparent"
+                                    android:tint="@color/color_primary_mumu"
+                                    android:layout_marginBottom="@dimen/_5dp"/>
+
+                                <TextView
+                                    android:textColor="@color/text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Credit Card"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5dp"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:layout_marginRight="@dimen/_10dp">
+                            <LinearLayout
+                                android:id="@+id/btnEMoney"
+                                android:background="@drawable/white_button"
+                                android:padding="@dimen/_10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:layout_marginRight="@dimen/_5dp">
+                                <ImageButton
+                                    android:scaleType="fitCenter"
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_e_money"
+                                    android:background="@android:color/transparent"
+                                    android:tint="@color/color_primary_mumu"
+                                    android:layout_marginBottom="@dimen/_5dp"/>
+
+                                <TextView
+                                    android:textColor="@color/text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="E-Money"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnQrCode"
+                                android:background="@drawable/white_button"
+                                android:padding="@dimen/_10dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+                                <ImageButton
+                                    android:scaleType="fitCenter"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/qr"
+                                    android:tint="@color/color_primary_mumu"
+                                    android:background="@android:color/transparent"
+                                    android:layout_marginBottom="@dimen/_5dp"/>
+
+                                <TextView
+                                    android:textColor="@color/text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="QR-Code"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--<LinearLayout
+                    android:id="@+id/contentCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Masukan Nomor Kartu"
+                            android:textColor="@color/md_grey_600" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/list_belanja_dark"
+                            android:minHeight="40dp"
+                            android:minWidth="150dp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Tanggal Kadaluarsa"
+                        android:textColor="@color/md_grey_600" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/list_belanja_dark"
+                        android:orientation="horizontal"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="3dp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/spinner_stroke">
+
+                            <Spinner
+                                android:id="@+id/mmSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="37dp"
+                                android:minWidth="100dp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/spinner_stroke">
+
+                            <Spinner
+                                android:id="@+id/ySpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="37dp"
+                                android:minWidth="100dp" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Kode CCV"
+                        android:textColor="@color/md_grey_600" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/list_belanja_dark"
+                            android:minHeight="40dp"
+                            android:minWidth="150dp" />
+
+                        <ImageView
+                            android:layout_width="23dp"
+                            android:layout_height="23dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/u3198" />
+
+                    </FrameLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Bayar"
+                        android:textColor="@color/md_white_1000" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

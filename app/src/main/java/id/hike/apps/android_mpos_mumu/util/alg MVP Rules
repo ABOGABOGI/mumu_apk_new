@@ -1,0 +1,16 @@
+View <-> Presenter <-> Model
+Segala method atau variabel miliknya, harus dibuat private,
+misalnya, method bussinessLogic milik presenter harus dibuat private
+agar hanya presenter yang bisa akses methodnya.
+
+Model:
+- handling permanent Model: SqLite
+- database logic
+
+Presenter:
+- handling temp Model
+- bussiness logic
+- retrofit
+
+View:
+- UI Logic

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/color_primary_mumu"
+            android:textSize="18dp"
+            android:text="Beli token listrik" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="15dp"
+            android:text="No.Meter/ID Pel" />
+
+        <EditText
+            android:id="@+id/etIdPelangganToken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginLeft="19dp"
+            android:hint="@string/contoh_id_pelanggan"
+            android:inputType="number"
+            android:maxLength="12"
+            android:imeOptions="actionDone"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/bg_nominal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextViewBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Nominal"
+                android:textColor="@color/text_style" />
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvListrikToken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15dp"
+                android:paddingRight="@dimen/_15dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+</LinearLayout>

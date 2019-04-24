@@ -1,0 +1,29 @@
+prosedur transaksi Service (TRS)
+
+    ITEM STATUS
+    public static int TIS_LOCK=1;
+    public static int TIS_UNLOCK=0;
+    public static int TIS_DELETE=9;
+
+    TRANSACTION STATUS
+    public static int TS_OPEN=1;
+    public static int TS_POSTPONE=2;
+    public static int TS_PAID=3;
+    public static int TS_CANCEL=4;
+
+==hal modelStrukSummary
+1.  btn bayar
+    loop item dengan transaksi id yg berlaku saat itu
+
+    lalu peritem itu, kirim service buy product dengan flag lock
+    -> hal payment
+
+2.  btn simpan
+    loop item dengan transaksi id yg berlaku saat itu
+    lalu peritem itu, kirim service buy product dengan flag postpone
+    -> hal landing page
+
+3.  btn batal
+    loop item dengan transaksi id yg berlaku saat itu
+    lalu peritem itu, kirim service buy product dengan flag cancel
+    -> hal landing page

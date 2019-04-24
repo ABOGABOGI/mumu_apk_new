@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="Udang Krispi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.55"
+        android:id="@+id/tvName"
+        />
+
+    <TextView
+        android:id="@+id/tvJumlah"
+        android:text="2 pcs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.225"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/tvHarga"
+        android:gravity="right"
+        android:text="20.000"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.225"
+        />
+</LinearLayout>

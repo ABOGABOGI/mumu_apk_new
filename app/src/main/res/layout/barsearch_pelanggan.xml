@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewAnimator xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/VaSearch"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:background="@color/md_grey_300"
+        android:id="@+id/frameLayoutSearch"
+        android:layout_height="50dp"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_gravity="right|center_vertical"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="25dp"
+            app:srcCompat="@drawable/vector_drawable_search"
+            android:tint="@color/color_primary_mumu" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:background="@color/md_white_1000"
+        android:layout_height="55dp"
+        android:layout_width="match_parent">
+
+        <ImageButton
+            android:background="@color/md_grey_300"
+            android:id="@+id/btnBackSearch"
+            android:layout_gravity="left"
+            android:layout_height="@dimen/btn_size"
+            android:layout_marginRight="10dp"
+            android:layout_width="@dimen/btn_size"
+            android:padding="@dimen/btn_padding_medium"
+            android:rotation="180"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/vector_drawable_left_arrow"
+            android:tint="@color/icon_style" />
+
+        <AutoCompleteTextView
+            android:ems="10"
+            android:hint="Masukkan kata kunci"
+            android:id="@+id/edInputSearchWord"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent" />
+
+        <ImageView
+            android:id="@+id/ivDeleteText"
+            android:layout_gravity="right|center"
+            android:layout_height="@dimen/btn_size_no_padding"
+            android:layout_marginRight="10dp"
+            android:layout_width="@dimen/btn_size_no_padding"
+            app:srcCompat="@drawable/ic_close_black"
+            android:tint="@color/icon_style" />
+    </FrameLayout>
+
+</ViewAnimator>

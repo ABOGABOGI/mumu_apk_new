@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_double"
+        android:background="@color/md_grey_200"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:text="@string/list_stok_kosong"
+            android:textColor="@color/text_style" />
+        <TextView
+            android:text="1. Samsung J2016"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvListItemStock"
+            android:layout_marginBottom="@dimen/_16dp"/>
+
+        <Button
+            android:id="@+id/btnCloseDF"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style"
+            android:text="Kembali ke ringkasan"
+            android:textAllCaps="false"
+            android:textColor="@color/md_white_1000" />
+
+    </LinearLayout>
+
+</LinearLayout>

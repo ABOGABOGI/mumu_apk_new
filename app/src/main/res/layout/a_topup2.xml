@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_primary_mumu"
+        autofit:layout_constraintBottom_toTopOf="@+id/cardView2"
+        autofit:layout_constraintEnd_toEndOf="parent"
+        autofit:layout_constraintStart_toStartOf="parent"
+        autofit:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top up"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        autofit:cardBackgroundColor="@color/color_primary_mumu"
+        autofit:cardCornerRadius="6dp"
+        autofit:layout_constraintEnd_toEndOf="parent"
+        autofit:layout_constraintStart_toStartOf="parent"
+        autofit:layout_constraintTop_toBottomOf="@+id/toolbar3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Lakukan Transfer Sebesar : "
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                autofit:layout_constraintEnd_toEndOf="parent"
+                autofit:layout_constraintStart_toStartOf="parent"
+                autofit:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/topup2_textview_transfer_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Rp 80.000"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="true"
+                android:textSize="30sp"
+                autofit:layout_constraintEnd_toEndOf="parent"
+                autofit:layout_constraintStart_toStartOf="parent"
+                autofit:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+            <ImageView
+                android:id="@+id/btn_copy"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:src="@mipmap/ic_copy"
+                android:tint="@android:color/white"
+                autofit:layout_constraintBottom_toBottomOf="@+id/topup2_textview_transfer_amount"
+                autofit:layout_constraintStart_toEndOf="@+id/topup2_textview_transfer_amount"
+                autofit:layout_constraintTop_toTopOf="@+id/topup2_textview_transfer_amount" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="Tepat hingga 3 digit terakhir"
+                android:textColor="@android:color/white"
+                autofit:layout_constraintEnd_toEndOf="@+id/topup2_textview_transfer_amount"
+                autofit:layout_constraintStart_toStartOf="@+id/topup2_textview_transfer_amount"
+                autofit:layout_constraintTop_toBottomOf="@+id/topup2_textview_transfer_amount" />
+
+            <TextView
+                android:id="@+id/expireDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="3124543676587"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                autofit:layout_constraintEnd_toEndOf="parent"
+                autofit:layout_constraintStart_toStartOf="parent"
+                autofit:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Perbedaan nilai transfer akan menghambat proses verifikasi"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                autofit:layout_constraintBottom_toBottomOf="parent"
+                autofit:layout_constraintEnd_toEndOf="parent"
+                autofit:layout_constraintStart_toStartOf="parent"
+                autofit:layout_constraintTop_toBottomOf="@+id/expireDate" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        autofit:cardCornerRadius="6dp"
+        android:elevation="6dp"
+        autofit:layout_constraintEnd_toEndOf="parent"
+        autofit:layout_constraintStart_toStartOf="parent"
+        autofit:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="No Rek. a.n DUTA DANADYAKSA TEKNOLOGI :"
+                autofit:layout_constraintEnd_toEndOf="parent"
+                autofit:layout_constraintStart_toStartOf="parent"
+                autofit:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_rek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="120 000 888 881 5"
+                android:textColor="@color/color_primary_mumu"
+                android:textSize="30sp"
+                autofit:layout_constraintBottom_toBottomOf="parent"
+                autofit:layout_constraintEnd_toEndOf="parent"
+                autofit:layout_constraintStart_toStartOf="parent"
+                autofit:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+            <ImageView
+                android:id="@+id/btn_copy_rek"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:src="@mipmap/ic_copy"
+                android:tint="@color/color_primary_mumu"
+                autofit:layout_constraintBottom_toBottomOf="@+id/txt_rek"
+                autofit:layout_constraintStart_toEndOf="@+id/txt_rek"
+                autofit:layout_constraintTop_toTopOf="@+id/txt_rek" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txt_intruksi"
+        android:textColor="@color/baroka_black"
+        autofit:layout_constraintEnd_toEndOf="parent"
+        autofit:layout_constraintStart_toStartOf="parent"
+        autofit:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <Button
+        android:id="@+id/btn_mengerti"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_style_primary_mumu"
+        android:fontFamily="@font/roboto_medium"
+        android:minHeight="40dp"
+        android:text="Ok, Saya mengerti"
+        android:textColor="@android:color/white"
+        autofit:layout_constraintBottom_toBottomOf="parent"
+        autofit:layout_constraintEnd_toEndOf="parent"
+        autofit:layout_constraintStart_toStartOf="parent"
+        autofit:layout_constraintTop_toBottomOf="@+id/textView42" />
+</androidx.constraintlayout.widget.ConstraintLayout>
