@@ -81,6 +81,7 @@ public class SantunanDhuafaBalance extends BaseActivity {
                         int a = Integer.parseInt((tambahAnggota.getText().toString()));
                         a = a + 1;
                         int c = a < 10 ? a : 10;
+                        //yang pertama menentukan kondisi, dan yang kedua jika nilai sebelum titik menentukan true & setelah titik nilai false
 
                         tambahAnggota.setText(String.valueOf(c));
                     }

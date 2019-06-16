@@ -18,7 +18,7 @@
     <uses-feature android:name="android.hardware.camera" />
 
     <application
-        android:name="id.hike.apps.android_mpos_mumu.app.BaseApplication"
+        android:name=".app.BaseApplication"
         android:allowBackup="true"
         android:icon="${appIcon}"
         android:label="@string/app_name"
@@ -27,30 +27,38 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:icon,android:roundIcon,android:theme,android:name,android:label">
-        <activity android:name="id.hike.apps.android_mpos_mumu.features.profil.GantiPin"></activity>
-        <activity android:name="id.hike.apps.android_mpos_mumu.features.profil.LoginGantiPin" />
-        <activity android:name="id.hike.apps.android_mpos_mumu.features.pdam.PdamActivity" />
-        <activity android:name="id.hike.apps.android_mpos_mumu.features.destinansi.DestinasiActivity" />
-        <activity android:name="id.hike.apps.android_mpos_mumu.features.tagihan_telepon.TagihanTeleponActivity" />
-        <activity android:name="id.hike.apps.android_mpos_mumu.features.home.narasi.TicketNarasiActivity" />
-        <activity android:name="id.hike.apps.android_mpos_mumu.features.home.narasi.TelkomNarasiActivity" />
+        <activity android:name=".KotaAsal"></activity>
+        <activity android:name=".FragmentPulangPergi" />
+        <activity android:name=".FragmentSekaliJalan" />
+        <activity android:name=".ScannerQrCode" />
+        <activity android:name=".KonfirmasiPembayaranByQrCode" />
+        <activity android:name=".HasilScanQrCode" />
+        <activity android:name=".TotalTagihanTelepon" />
+        <activity android:name=".RegisLinkAjaBerhasil" />
+        <activity android:name=".features.profil.GantiPin" />
+        <activity android:name=".features.profil.LoginGantiPin" />
+        <activity android:name=".features.pdam.PdamActivity" />
+        <activity android:name=".features.destinansi.DestinasiActivity" />
+        <activity android:name=".features.tagihan_telepon.TagihanTeleponActivity" />
+        <activity android:name=".features.home.narasi.TicketNarasiActivity" />
+        <activity android:name=".features.home.narasi.TelkomNarasiActivity" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.regstep.LupaPasswordActivity"
+            android:name=".regstep.LupaPasswordActivity"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name="id.hike.apps.android_mpos_mumu.features.proteksi.ProteksiActivity" />
-        <activity android:name="id.hike.apps.android_mpos_mumu.features.profil.activity.ChangePasswordActivity" />
+        <activity android:name=".features.proteksi.ProteksiActivity" />
+        <activity android:name=".features.profil.activity.ChangePasswordActivity" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.kamera.CameraActivity"
+            android:name=".features.kamera.CameraActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.pin_verifikasi.InFrameWalletActivity"
+            android:name=".features.pin_verifikasi.InFrameWalletActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.landing_page.AktivasiWalletActivity"
+            android:name=".features.landing_page.AktivasiWalletActivity"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name="id.hike.apps.android_mpos_mumu.regstep.RegistrasiBerhasilActivity" />
+        <activity android:name=".regstep.RegistrasiBerhasilActivity" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.regstep.RegStepSimpleActivity"
+            android:name=".regstep.RegStepSimpleActivity"
             android:windowSoftInputMode="adjustPan" /> <!-- <meta-data -->
         <!-- android:name="com.google.android.gms.version" -->
         <!-- android:value="@integer/google_play_services_version" /> -->
@@ -62,43 +70,43 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.login.LoginActivity"
+            android:name=".features.login.LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateVisible|adjustResize" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.landing_page.LandingPage"
+            android:name=".features.landing_page.LandingPage"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.profil.Profil"
+            android:name=".features.profil.Profil"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.aktifitas.AktifitasHistoryActivity"
+            android:name=".features.aktifitas.AktifitasHistoryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.pelanggan.Pelanggan"
+            android:name=".features.pelanggan.Pelanggan"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.home.Home"
+            android:name=".features.home.Home"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.payment.Payment"
+            android:name=".features.payment.Payment"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.receipt_invoice.ReceiptInvoice"
+            android:name=".features.receipt_invoice.ReceiptInvoice"
             android:screenOrientation="portrait"
             android:theme="@style/StrukTheme" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.summary.SummaryActivity"
+            android:name=".features.summary.SummaryActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.pelanggan.PelangganSearchResult"
+            android:name=".features.pelanggan.PelangganSearchResult"
             android:screenOrientation="portrait" />
-        <activity android:name="id.hike.apps.android_mpos_mumu.features.landing_page.A_ZoomImage" />
+        <activity android:name=".features.landing_page.A_ZoomImage" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.splash.Splash"
+            android:name=".features.splash.Splash"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -107,86 +115,103 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.landing_page.A_TambahProduk"
+            android:name=".features.landing_page.A_TambahProduk"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.TesSlider"
+            android:name=".TesSlider"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.profil.PosCamera"
+            android:name=".features.profil.PosCamera"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.kode_otp.KodeOtpActivity"
+            android:name=".features.kode_otp.KodeOtpActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.wakaf.AkadActivity"
+            android:name=".features.wakaf.AkadActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.tnc.TncActivity"
+            android:name=".features.tnc.TncActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.wakafku.Wakafku"
+            android:name=".features.wakafku.Wakafku"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.wakaf.RsHasyimAsyariUntukDhuafa"
+            android:name=".features.wakaf.RsHasyimAsyariUntukDhuafa"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.wakaf.WakafDetailActivity"
+            android:name=".features.wakaf.WakafDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.wakaf.PesantrenProduktifSmartHafidzVillage"
+            android:name=".features.wakaf.PesantrenProduktifSmartHafidzVillage"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.wakaf.ProgramWakafActivity"
+            android:name=".features.wakaf.ProgramWakafActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.top_up.TopUpActivity"
+            android:name=".features.top_up.TopUpActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.top_up.TopUpActivity2"
+            android:name=".features.top_up.TopUpActivity2"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.register.RegisterActivity"
+            android:name=".features.register.RegisterActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.wakaf.PembayaranWakaf"
+            android:name=".features.wakaf.PembayaranWakaf"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.donasi.donasi"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.donasi.DonasiSecondActivityBaru"
+            android:name=".features.donasi.donasi"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.donasi.ZakatSecondActivity"
+            android:name=".features.donasi.DonasiSecondActivityBaru"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.donasi.ZakatSecondActivityBaru"
+            android:name=".features.donasi.ZakatSecondActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.donasi.AkadDonasiActivity"
+            android:name=".features.donasi.ZakatSecondActivityBaru"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.donasi.AkadZakatActivity"
+            android:name=".features.donasi.AkadDonasiActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.donasi.TotalDonasiActivity"
+            android:name=".features.donasi.AkadZakatActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.donasi.TotalZakatActivity"
+            android:name=".features.donasi.TotalDonasiActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.pin_verifikasi.PinActivity"
+            android:name=".features.donasi.TotalZakatActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.wakaf.TotalWakafActivity"
+            android:name=".features.pin_verifikasi.PinActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.profil.profilConto"
+            android:name=".features.wakaf.TotalWakafActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.hike.apps.android_mpos_mumu.features.utils.UtilDialogActivity"
+            android:name=".features.profil.profilConto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.utils.UtilDialogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.proteksi.SantunanDhuafaBalance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.proteksi.AkadSantunan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.proteksi.TotalSantunan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.top_up.RegisterLinkAja"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NextRegistrasiLinkAja"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NextStepRegisLinkAja"
             android:screenOrientation="portrait" />
     </application>
 

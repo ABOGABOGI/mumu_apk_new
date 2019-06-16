@@ -23,7 +23,9 @@ import id.hike.apps.android_mpos_mumu.R;
 import id.hike.apps.android_mpos_mumu.base.BaseActivity;
 import id.hike.apps.android_mpos_mumu.features.landing_page.AktivasiWalletActivity;
 import id.hike.apps.android_mpos_mumu.features.landing_page.df.WalletApi;
+import id.hike.apps.android_mpos_mumu.features.top_up.RegisterLinkAja;
 import id.hike.apps.android_mpos_mumu.features.top_up.TopUpActivity;
+import id.hike.apps.android_mpos_mumu.features.wakaf.WakafDetailActivity;
 import id.hike.apps.android_mpos_mumu.model.Response;
 import id.hike.apps.android_mpos_mumu.model.User;
 import id.hike.apps.android_mpos_mumu.model.WalletInfo;
@@ -49,11 +51,17 @@ public class WalletBannerView extends LinearLayout {
     @BindView(R.id.btnReloadSaldo)
     Button reloadButtonSaldo;
 
+    @BindView(R.id.btnReloadSaldoLinkAja)
+    Button reloadButtonSaldoLinkAja;
+
     @BindView(R.id.dompetContainer)
     LinearLayout dompetContainer;
 
     @BindView(R.id.imageView8)
     ImageView iconDompet;
+
+    @BindView(R.id.linkAja)
+    ImageView iconDompetLinkAja;
 
     @BindView(R.id.shimmerLayout)
     ShimmerFrameLayout shimmer;
@@ -103,6 +111,14 @@ public class WalletBannerView extends LinearLayout {
 
                 }
 
+            }
+        });
+
+        reloadButtonSaldoLinkAja.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), RegisterLinkAja.class);
+                getContext().startActivity(intent);
             }
         });
 

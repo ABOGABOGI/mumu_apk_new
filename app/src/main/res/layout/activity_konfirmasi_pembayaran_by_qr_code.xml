@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KonfirmasiPembayaranByQrCode">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_primary_mumu">
+
+        <ImageView
+            android:id="@+id/backBtn_univ"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/ic_back_button"
+            android:tint="@color/md_white_1000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Konfirmasi Pembayaran"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Transaki" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID Merchant" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Merchant" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat Merchant" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Bayar" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sisa Saldo" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Transaksi"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout21"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout21">
+
+        <TextView
+            android:id="@+id/nomorTransaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R25AAH1"
+            android:textColor="@color/md_black_1000"
+            android:textSize="@dimen/_16dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/idMerchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="220mumu"
+            android:textColor="@color/md_black_1000"
+            android:textSize="@dimen/_16dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dompet Dhuafa"
+            android:textColor="@color/md_black_1000"
+            android:textSize="@dimen/_16dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/alamatMerchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jakarta Pusat"
+            android:textColor="@color/md_black_1000"
+            android:textSize="@dimen/_16dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/jumlahBayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_black_1000"
+            android:textSize="@dimen/_16dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/sisaSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_black_1000"
+            android:textSize="@dimen/_16dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/waktuTransaksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/_16dp" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tanggalTransaksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/_16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bayar"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_style_primary_mumu"
+        android:text="Bayar"
+        android:textColor="@color/md_white_1000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

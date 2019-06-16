@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +34,18 @@ public class RegisterLinkAja extends BaseActivity {
         nomorHandphne = findViewById(R.id.nomorHanphone);
         btnLanjut = findViewById(R.id.btnLanjutRegisLinkAja);
         btnRegisLinkAjaPlayStore = findViewById(R.id.btnRegisToPlystoreLinkAja);
+
+        btnRegisLinkAjaPlayStore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //final String appPackageName = getPackageName(); // getPackageName() from Context or Activity object
+                //startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.telkom.mwallet&hl=in" + appPackageName)));
+                final String appPackageName = getPackageName(); // getPackageName() from Context or Activity object
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(
+                        "https://play.google.com/store/apps/details?id=com.telkom.mwallet&hl=in" + appPackageName));
+                startActivity(intent);
+            }
+        });
 
         btnLanjut.setOnClickListener(new View.OnClickListener() {
             @Override

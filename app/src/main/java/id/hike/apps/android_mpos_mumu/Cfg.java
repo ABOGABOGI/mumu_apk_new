@@ -274,4 +274,19 @@ public class Cfg {
     public static final String USERNAME_LOGIN_KEY = "USERNAME_LOGIN_KEY";
     public static final String REMEMBER_ME_STATUS_KEY = "REMEMBER_ME_STATUS_KEY";
 
+    public static final String NOMOR_HANDPHONE = "NOMOR_HANDPHONE";
+    public static final String TOTAL_BAYAR_MUSTAHIQ = "TOTAL_BAYAR_MUSTAHIQ";
+    public static final String NAMA_MUSTAHIQ_SANTUNAN = "NAMA_MUSTAHIQ_SANTUNAN";
+    public static final String TANGGAL_MUSTAHIQ_SANTUNAN = "TANGGAL_MUSTAHIQ_SANTUNAN";
+    public static final String JENIS_KELAMIN_MUSTAHIQ = "JENIS_KELAMIN_MUSTAHIQ";
+    public static final String JUMLAH_MUSTAHIQ = "JUMLAH_MUSTAHIQ";
+    public static final String PASSWORD_LINK_AJA = "PASSWORD_LINK_AJA";
+
+    public static final String NAMA_QR = "NAMA_QR";
+    public static final String TINGGI_QR = "TINGGI_QR";
+
+    public static final String JUMLAH_BAYAR_BY_QR_CODE = "JUMLAH_BAYAR_BY_QR_CODE";
+    public static final String SISA_SALDO = "SISA_SALDO";
+
+    public static final String KOTA_TUJUAN = "KOTA_TUJUAN";
 }

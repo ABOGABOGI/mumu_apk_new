@@ -37,7 +37,7 @@ public class NextRegistrasiLinkAja extends BaseActivity {
 
                 sharedPref.putString(Cfg.PASSWORD_LINK_AJA, String.valueOf(passwordRegis.getText().toString()));
                 sharedPref.apply();
-                Toast.makeText(NextRegistrasiLinkAja.this, Cfg.PASSWORD_LINK_AJA, Toast.LENGTH_SHORT).show();
+                Toast.makeText(NextRegistrasiLinkAja.this, getSecPref().getString(Cfg.PASSWORD_LINK_AJA, Cfg.PASSWORD_LINK_AJA), Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(NextRegistrasiLinkAja.this, NextStepRegisLinkAja.class);
                 startActivity(intent);

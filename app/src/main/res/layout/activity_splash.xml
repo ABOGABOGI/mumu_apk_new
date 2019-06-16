@@ -7,17 +7,84 @@
     android:background="@color/color_primary_mumu"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="id.co.hike.apps.android_mpos_mumu.features.splash.Splash">
+    tools:context=".features.splash.Splash">
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:contentDescription="@string/app_name"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/logo_bg_white_vertical" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="40dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/logo_bg_white_vertical" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+                <LinearLayout
+                    android:layout_width="199dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_splash">
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="60dp"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/magsaysayaward"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="66dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/logoddpng"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.333"
+                        app:layout_constraintStart_toEndOf="@+id/imageView9"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

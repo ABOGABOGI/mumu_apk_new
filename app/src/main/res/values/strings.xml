@@ -4,7 +4,11 @@
 <b>Masa berlaku link hanya 30 menit sejak
 di kirim dari sistem.</b></string>
 
+    <string name="txt_akad_santunan_dhuafa">Saya menitipkan dan mempercayakan amanah santunan dhuafa kepada Dompet Dhuafa mohon disampaikan dan digunakan sesuai dengan ketentuan syariah</string>
+    <string name="txt_link_aja">Cek nomor handphone Anda yang teregistrasi diakun LinkAja</string>
+    <string name="txt_link_aja_dua">Anda akan mengaktifkan fitur direct debit</string>
 
+    <string name="txt_lanjut_regis_linkaja">Anda memberi wewenang penuh kepada mumu &amp; LinkAja untuk : kapanpun, tanpa memberi pemberitahuan atau persetujuan, melakukan pemotongan saldo LinkAja sebagai pemenuhan pembayaran transaksi di mumu</string>
     <string name="terimakasih">Transaksi berhasil.\nJangan lupa ucapkan \"<b>terima kasih</b>\"</string>
     <string name="photo_permission_rationale">Izin penyimpanan dibutuhkan untuk mengambil foto dokumen.</string>
     <string name="returned_from_app_settings_to_activity">Izin penyimpanan sudah diaktifkan</string>

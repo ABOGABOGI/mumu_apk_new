@@ -104,7 +104,7 @@
         </LinearLayout>
 
         <Space
-            android:layout_width="100dp"
+            android:layout_width="131dp"
             android:layout_height="match_parent" />
 
         <LinearLayout
@@ -148,42 +148,42 @@
 
                 <EditText
                     android:id="@+id/verifikasiSatu"
-                    android:layout_width="50dp"
+                    android:layout_width="57dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:maxLength="1" />
 
                 <EditText
                     android:id="@+id/verifikasiDua"
-                    android:layout_width="50dp"
+                    android:layout_width="57dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:maxLength="1" />
 
                 <EditText
                     android:id="@+id/verifikasiTiga"
-                    android:layout_width="50dp"
+                    android:layout_width="57dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:maxLength="1" />
 
                 <EditText
                     android:id="@+id/verifikasiEmpat"
-                    android:layout_width="50dp"
+                    android:layout_width="57dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:maxLength="1" />
 
                 <EditText
                     android:id="@+id/verifikasiLima"
-                    android:layout_width="50dp"
+                    android:layout_width="57dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:maxLength="1" />
 
                 <EditText
                     android:id="@+id/verifikasiEnam"
-                    android:layout_width="50dp"
+                    android:layout_width="57dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:maxLength="1" />

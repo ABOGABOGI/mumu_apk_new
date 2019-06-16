@@ -80,6 +80,16 @@
                             android:fontFamily="@font/roboto"/>
                     </LinearLayout>
 
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="37dp"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/arrow_color"
+                        android:fontFamily="@font/roboto"
+                        android:textAllCaps="false"
+                        android:textColor="@color/baroka_white"
+                        android:textSize="11sp" />
+
                     <Space
                         android:layout_width="4.5dp"
                         android:layout_height="wrap_content"
@@ -89,6 +99,32 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:background="@color/arrow_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_3dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:visibility="invisible"
+                            android:layout_height="18dp"
+                            app:srcCompat="@drawable/ic_dompet" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="Rp. 0,-"
+                            android:textSize="11sp"
+                            android:visibility="invisible"
+                            android:clickable="true"
+                            android:fontFamily="@font/roboto"/>
+                    </LinearLayout>
 
                     <Button
                         android:layout_width="65dp"
@@ -174,6 +210,18 @@
                         android:fontFamily="@font/roboto"/>
                 </LinearLayout>
 
+                <Button
+                    android:id="@+id/btnReloadSaldo"
+                    android:layout_width="65dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="0"
+                    android:backgroundTint="@color/color_primary_mumu"
+                    android:fontFamily="@font/roboto"
+                    android:textAllCaps="false"
+                    android:text="Top Up"
+                    android:textColor="@color/baroka_white"
+                    android:textSize="11sp" />
+
                 <Space
                     android:layout_width="4.5dp"
                     android:layout_height="wrap_content"
@@ -184,15 +232,32 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
+                <LinearLayout
+                    android:id="@+id/dompetLinkAja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_3dp">
+
+                    <ImageView
+                        android:id="@+id/linkAja"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        app:srcCompat="@drawable/linkaja" />
+
+                </LinearLayout>
+
                 <Button
-                    android:id="@+id/btnReloadSaldo"
+                    android:id="@+id/btnReloadSaldoLinkAja"
                     android:layout_width="65dp"
                     android:layout_height="37dp"
                     android:layout_weight="0"
-                    android:backgroundTint="@color/color_primary_mumu"
+                    android:backgroundTint="@color/red_link_aja"
                     android:fontFamily="@font/roboto"
                     android:textAllCaps="false"
-                    android:text="Top Up"
+                    android:text="Aktifkan"
                     android:textColor="@color/baroka_white"
                     android:textSize="11sp" />
             </LinearLayout>

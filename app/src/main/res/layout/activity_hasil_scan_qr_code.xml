@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HasilScanQrCode">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_primary_mumu">
+
+        <ImageView
+            android:id="@+id/backBtn_univ"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/ic_back_button"
+            android:tint="@color/md_white_1000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay by QR"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saldo mumu" />
+
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/saldoMumu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16dp"
+                android:textColor="@color/md_black_1000"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID Merchant" />
+
+            <Space
+                android:layout_width="62dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/idMerchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="226mumu"
+                android:textSize="@dimen/_16dp"
+                android:textColor="@color/md_black_1000"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Merchant" />
+
+            <Space
+                android:layout_width="37dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/namaMerchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17Seven Store"
+                android:textSize="@dimen/_16dp"
+                android:textColor="@color/md_black_1000"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat Merchant" />
+
+            <Space
+                android:layout_width="29dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/alamatMerchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jakarta Pusat"
+                android:textSize="@dimen/_16dp"
+                android:textColor="@color/md_black_1000"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Bayar" />
+
+            <Space
+                android:layout_width="53dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/jumlahBayar"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:background="@drawable/edit_text_mumu_style"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="Metode Pembayaran"
+        android:textSize="@dimen/_20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout21" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="*Klik button proses jika seluruh data sudah sesuai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+    <Button
+        android:id="@+id/proses"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_style_primary_mumu"
+        android:text="Proses"
+        android:textColor="@color/md_white_1000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

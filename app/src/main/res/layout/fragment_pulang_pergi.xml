@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentPulangPergi">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kota Asal"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/_12dp" />
+
+            <Space
+                android:layout_width="11dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_planetakingoff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout22"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout22"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kota Tujuan"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/_12dp" />
+
+            <Space
+                android:layout_width="11dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/planetakingoff" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/md_white_1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <LinearLayout
+            android:id="@+id/linearLayout24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="CGK"/>
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Jakarta"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pilihKotaAsal"
+                android:layout_width="29dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_downarrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout23"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="50dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/testing"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout25"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout24"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="CGK" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Jakarta"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pilihKotaTujuan"
+                android:layout_width="29dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_downarrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout23"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/md_white_1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:id="@+id/linearLayout26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Berangkat"
+                android:textSize="@dimen/_8dp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="4dp" />
+
+            <EditText
+                android:id="@+id/tanggalBerangkat"
+                android:layout_width="285dp"
+                android:layout_height="36dp"
+                android:textColor="@color/md_black_1000"
+                android:background="@drawable/edit_text_mumu_style"
+                android:textSize="@dimen/_12dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="35dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_calendar"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout26"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout26"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout26"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutPp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/md_white_1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <LinearLayout
+            android:id="@+id/linearLayout27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Berangkat"
+                android:textSize="@dimen/_8dp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="4dp" />
+
+            <EditText
+                android:id="@+id/tanggalPulang"
+                android:layout_width="285dp"
+                android:layout_height="36dp"
+                android:background="@drawable/edit_text_mumu_style"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/_12dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/kalenderPulang"
+            android:layout_width="35dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_calendar"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout27"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout27"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout27"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutPp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penumpang"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/md_white_1000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/ic_kurang"
+                            app:layout_constraintBottom_toBottomOf="@+id/editText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/editText" />
+
+                        <EditText
+                            android:id="@+id/editText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/edit_text_putih"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:textSize="14dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView19"
+                            app:layout_constraintStart_toEndOf="@+id/imageView18"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_tambah"
+                            app:layout_constraintBottom_toBottomOf="@+id/editText"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/editText" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Space
+                            android:layout_width="28dp"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dewasa"
+                            android:textSize="@dimen/_10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="12dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/md_white_1000"
+                        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout4"
+                        app:layout_constraintEnd_toStartOf="@+id/constraintLayout6"
+                        app:layout_constraintHorizontal_bias="0.49"
+                        app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+                        app:layout_constraintTop_toTopOf="@+id/constraintLayout4">
+
+                        <ImageView
+                            android:id="@+id/imageView20"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/ic_kurang"
+                            app:layout_constraintBottom_toBottomOf="@+id/editText21"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/editText21" />
+
+                        <EditText
+                            android:id="@+id/editText21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/edit_text_putih"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:textSize="14dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView22"
+                            app:layout_constraintStart_toEndOf="@+id/imageView20"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <ImageView
+                            android:id="@+id/imageView22"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_tambah"
+                            app:layout_constraintBottom_toBottomOf="@+id/editText21"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/editText21" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Space
+                            android:layout_width="22dp"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Anak-anak"
+                            android:textSize="@dimen/_10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="12dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/md_white_1000"
+                        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/constraintLayout5">
+
+                        <ImageView
+                            android:id="@+id/imageView23"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/ic_kurang"
+                            app:layout_constraintBottom_toBottomOf="@+id/editText24"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/editText24" />
+
+                        <EditText
+                            android:id="@+id/editText24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/edit_text_putih"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:textSize="14dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView25"
+                            app:layout_constraintStart_toEndOf="@+id/imageView23"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <ImageView
+                            android:id="@+id/imageView25"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_tambah"
+                            app:layout_constraintBottom_toBottomOf="@+id/editText24"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/editText24" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Space
+                            android:layout_width="36dp"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bayi"
+                            android:textSize="@dimen/_10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

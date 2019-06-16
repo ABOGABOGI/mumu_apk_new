@@ -1,4 +1,4 @@
-package id.hike.apps.android_mpos_mumu.features.proteksi;
+package id.hike.apps.android_mpos_mumu.features.wakaf;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
