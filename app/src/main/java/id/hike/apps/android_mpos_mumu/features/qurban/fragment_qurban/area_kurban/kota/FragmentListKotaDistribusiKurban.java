@@ -1,14 +1,8 @@
-package id.hike.apps.android_mpos_mumu.features.qurban.fragment_qurban;
+package id.hike.apps.android_mpos_mumu.features.qurban.fragment_qurban.area_kurban.kota;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.net.Uri;
-import android.os.Bundle;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -16,16 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
-import id.hike.apps.android_mpos_mumu.Cfg;
-import id.hike.apps.android_mpos_mumu.FragmentSekaliJalan;
-import id.hike.apps.android_mpos_mumu.ListKotaAsal;
-import id.hike.apps.android_mpos_mumu.ListKotaAsalAdapter;
 import id.hike.apps.android_mpos_mumu.R;
-import id.hike.apps.android_mpos_mumu.features.profil.ProfilModule_ProvidesFProfilFactory;
 import id.hike.apps.android_mpos_mumu.features.qurban.area_distribusi_adapter.AreaAdapter;
 
 public class FragmentListKotaDistribusiKurban extends RecyclerView.Adapter<FragmentListKotaDistribusiKurban.MyViewHolder> {

@@ -148,18 +148,15 @@ public class DonasiSecondActivityBaru extends BaseActivity {
 
         etNamaOrang.setVisibility(View.GONE);
         etNohp.setVisibility(View.GONE);
-        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(checkBox.isChecked()){
-                    etNamaMuzaki.setEnabled(false);
-                    etNamaOrang.setVisibility(View.VISIBLE);
-                    etNohp.setVisibility(View.VISIBLE);
-                }else {
-                    etNamaMuzaki.setEnabled(true);
-                    etNamaOrang.setVisibility(View.GONE);
-                    etNohp.setVisibility(View.GONE);
-                }
+        checkBox.setOnCheckedChangeListener((compoundButton, b) -> {
+            if(checkBox.isChecked()){
+                etNamaMuzaki.setEnabled(false);
+                etNamaOrang.setVisibility(View.VISIBLE);
+                etNohp.setVisibility(View.VISIBLE);
+            }else {
+                etNamaMuzaki.setEnabled(true);
+                etNamaOrang.setVisibility(View.GONE);
+                etNohp.setVisibility(View.GONE);
             }
         });
 

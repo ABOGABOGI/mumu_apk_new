@@ -57,6 +57,8 @@ public class Cfg {
 
     public static final String TAG_PULSA = "pulsa";
     public static final String TAG_LISTRIK = "listrik";
+    public static final String TAG_TELEPON = "TAG_TELEPON";
+    public static final String TAG_LISTRIK_PASCA_BAYAR = "listrikpascabayar";
     public static final String TAG_PDAM = "pdam";
     public static final String TAG_TELKOM = "telkom";
 
@@ -68,13 +70,13 @@ public class Cfg {
 //    APPS
 
 //    public static String BASE_URL_SERVER = "http://10.0.2.2";
-    public static String BASE_URL_SERVER = "http://35.247.144.76";
+    public static String BASE_URL_SERVER = "http://mumu.hike.id";
 //    public static String BASE_URL_SERVER = "http://192.168.0.8";
 
-    public static String BASE_URL_OAUTH = "http://35.247.144.76";
+    public static String BASE_URL_OAUTH = "http://mumu.hike.id";
 
-    public static String BASE_PORT_SERVICE = "30006";
-    public static String BASE_PORT_OAUTH = "30008";
+    public static String BASE_PORT_SERVICE = "20006";
+    public static String BASE_PORT_OAUTH = "20008";
 
     public static String BASE_URL_DEV = BASE_URL_SERVER + ":" + BASE_PORT_SERVICE + "/";
     public static String BASE_URL_DEV_TOKEN = BASE_URL_OAUTH + ":" + BASE_PORT_OAUTH + "/";
@@ -83,7 +85,7 @@ public class Cfg {
     public static String BASE_ASSET_URL = BASE__PUBLIK_URL + "asset/";
     public static String BASE__PUBLIK_URL_APIS = BASE_URL_DEV + "apis/";
 
-    public static String INFRAME_URL = "http://172.104.34.189:8989/";
+    public static String INFRAME_URL = "http://wallet.hike.id:8988/";
 
     public static String DB_SPINNER_DONASI = "/resource-service/produk/zakat";
     public static String DB_SPINNER_DONASI_DUA = "/resource-service/produk/zakatSub";
@@ -289,4 +291,12 @@ public class Cfg {
     public static final String SISA_SALDO = "SISA_SALDO";
 
     public static final String KOTA_TUJUAN = "KOTA_TUJUAN";
+    public static final String JENIS_KURBAN = "JENIS_KURBAN";
+    public static final String HARGA_KAMBING = "HARGA_KAMBING";
+    public static final String HARGA_SAPI = "HARGA_SAPI";
+
+    public static final String KOTA_DISTRIBUSI_KURBAN = "KOTA_DISTRIBUSI_KURBAN";
+    public static final String PROVINSI_DISTRIBUSI_KURBAN = "PROVINSI_DISTRIBUSI_KURBAN";
+
+    public static final String NAMA_PEKURBAN = "NAMA_PEKURBAN";
 }

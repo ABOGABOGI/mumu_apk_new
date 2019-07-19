@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import id.hike.apps.android_mpos_mumu.R;
+
 public class ActivityStrukPascaBayarIndosat extends AppCompatActivity {
 
     @Override

@@ -99,49 +99,40 @@ public class WalletBannerView extends LinearLayout {
         walletContainer.setVisibility(GONE);
 
 
-        setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        setOnClickListener(v1 -> {
 
-                if(!isActive){
+            if(!isActive){
 
-                    Intent intent = new Intent(getContext(), AktivasiWalletActivity.class);
+                Intent intent = new Intent(getContext(), AktivasiWalletActivity.class);
 
-                    getContext().startActivity(intent);
-
-                }
-
-            }
-        });
-
-        reloadButtonSaldoLinkAja.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), RegisterLinkAja.class);
                 getContext().startActivity(intent);
+
             }
+
         });
 
-        reloadButtonSaldo.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        reloadButtonSaldoLinkAja.setOnClickListener(v12 -> {
+            Intent intent = new Intent(getContext(), RegisterLinkAja.class);
+            getContext().startActivity(intent);
+        });
+
+        reloadButtonSaldo.setOnClickListener(v13 -> {
 
 
-                if(!isActive){
-                    Intent intent = new Intent(getContext(), AktivasiWalletActivity.class);
-                    getContext().startActivity(intent);
-                }else{
-                    Intent topIntent = new Intent(getContext(), TopUpActivity.class);
-                    topIntent.putExtra("wallet", info);
-                    getContext().startActivity(topIntent);
+            if(!isActive){
+                Intent intent = new Intent(getContext(), AktivasiWalletActivity.class);
+                getContext().startActivity(intent);
+            }else{
+                Intent topIntent = new Intent(getContext(), TopUpActivity.class);
+                topIntent.putExtra("wallet", info);
+                getContext().startActivity(topIntent);
 
 
 //                    Toast.makeText(getContext(), "Under Development", Toast.LENGTH_LONG).show();
-                }
-
-
-
             }
+
+
+
         });
     }
 

@@ -18,6 +18,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import id.hike.apps.android_mpos_mumu.features.qurban.ActivityNextKurbanSapi;
+import id.hike.apps.android_mpos_mumu.features.qurban.fragment_qurban.area_kurban.provinsi.FragmentListProvinsiDistribusiKurban;
+import id.hike.apps.android_mpos_mumu.util.ListenerRecyclerItemClick;
+
 public class KotaAsal extends Fragment {
 
     ConstraintLayout constraintLayout, constraintLayoutDua, constraintLayoutTiga, constraintLayoutEmpat;
@@ -26,7 +30,7 @@ public class KotaAsal extends Fragment {
     View viewKu;
 
     RecyclerView recyclerView;
-    List<ListKotaAsal> daftarKotaAsal;
+    public List<ListKotaAsal> daftarKotaAsal;
 
     public KotaAsal() {
         // Required empty public constructor

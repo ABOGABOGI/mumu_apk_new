@@ -1,7 +1,8 @@
-package id.hike.apps.android_mpos_mumu.features.qurban.fragment_qurban.area_kurban.provinsi.kambing_standar;
+package id.hike.apps.android_mpos_mumu.features.qurban.fragment_qurban.area_kurban.provinsi.sapi;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -18,6 +19,7 @@ import java.util.List;
 
 import id.hike.apps.android_mpos_mumu.Cfg;
 import id.hike.apps.android_mpos_mumu.R;
+import id.hike.apps.android_mpos_mumu.base.BaseFragment;
 import id.hike.apps.android_mpos_mumu.features.qurban.ActivityNextKurbanSapi;
 import id.hike.apps.android_mpos_mumu.features.qurban.area_distribusi_adapter.AreaAdapter;
 import id.hike.apps.android_mpos_mumu.features.qurban.area_distribusi_adapter.ProvinsiDistribusiKurbanAdapter;
@@ -25,7 +27,7 @@ import id.hike.apps.android_mpos_mumu.features.qurban.fragment_qurban.area_kurba
 import id.hike.apps.android_mpos_mumu.features.qurban.fragment_qurban.area_kurban.provinsi.FragmentListProvinsiDistribusiKurban;
 import id.hike.apps.android_mpos_mumu.util.ListenerRecyclerItemClick;
 
-public class FragmentProvinsiDistribusiKurban extends Fragment {
+public class FragmentProvinsiDistribusiKurban extends BaseFragment {
 
     RecyclerView recyclerView;
     List<ProvinsiDistribusiKurbanAdapter> daftarProvinsiDistribusiKurban;
@@ -84,21 +86,19 @@ public class FragmentProvinsiDistribusiKurban extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(fragmentListProvinsiDistribusiKurban);
 
-        recyclerView.addOnItemTouchListener(new ListenerRecyclerItemClick(getContext(), new ListenerRecyclerItemClick.OnItemClickListener(){
-            @Override
-            public void onItemClick(View view, int position){
+        recyclerView.addOnItemTouchListener(new ListenerRecyclerItemClick(getContext(), (view1, position) -> {
 
-                FragmentListProvinsiDistribusiKurban fragmentListKotaDistribusiKurban1 = ((FragmentListProvinsiDistribusiKurban) recyclerView.getAdapter());
-                fragmentListProvinsiDistribusiKurban.dataList.get(position).getNamaProvinsiDistribusiKurban();
+            FragmentListProvinsiDistribusiKurban fragmentListKotaDistribusiKurban1 = ((FragmentListProvinsiDistribusiKurban) recyclerView.getAdapter());
+            fragmentListProvinsiDistribusiKurban.dataList.get(position).getNamaProvinsiDistribusiKurban();
 
-                Bundle bundle = new Bundle();
-                bundle.putString(Cfg.PROVINSI_DISTRIBUSI_KURBAN, String.valueOf(fragmentListProvinsiDistribusiKurban.dataList.get(position).getNamaProvinsiDistribusiKurban()));
+            //Bundle bundle = new Bundle();
+            SharedPreferences.Editor sf = getFragSecPrefs().edit();
+            sf.putString(Cfg.PROVINSI_DISTRIBUSI_KURBAN, String.valueOf(fragmentListProvinsiDistribusiKurban.dataList.get(position).getNamaProvinsiDistribusiKurban()));
+            sf.apply();
 
-                Intent intent = new Intent(getContext(), ActivityNextKurbanSapi.class);
-                intent.putExtras(bundle);
-                getContext().startActivity(intent);
+            Intent intent = new Intent(getContext(), ActivityNextKurbanSapi.class);
+            getContext().startActivity(intent);
 
-            }
         }));
 
         return view;

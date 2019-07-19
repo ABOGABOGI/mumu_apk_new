@@ -1,4 +1,4 @@
-package id.hike.apps.android_mpos_mumu.features.qurban.fragment_qurban.area_kurban.kota;
+package id.hike.apps.android_mpos_mumu.features.qurban.fragment_qurban.area_kurban.kota.kambing_standar;
 
 import android.content.Context;
 import android.content.Intent;
@@ -23,6 +23,7 @@ import id.hike.apps.android_mpos_mumu.base.BaseFragment;
 import id.hike.apps.android_mpos_mumu.features.qurban.ActivityNextKurbanSapi;
 import id.hike.apps.android_mpos_mumu.features.qurban.ActivityNextQurban;
 import id.hike.apps.android_mpos_mumu.features.qurban.area_distribusi_adapter.AreaAdapter;
+import id.hike.apps.android_mpos_mumu.features.qurban.fragment_qurban.area_kurban.kota.FragmentListKotaDistribusiKurban;
 import id.hike.apps.android_mpos_mumu.util.ListenerRecyclerItemClick;
 
 public class FragmentKotaDistribusiKurban extends BaseFragment {

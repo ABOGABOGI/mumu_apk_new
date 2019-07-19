@@ -40,8 +40,6 @@ public class BannerPagerAdapter extends FragmentStatePagerAdapter {
             fragmentBanner.setImageResource(imagesResource[i]);
         }
 
-
-
         return fragmentBanner;
     }
 

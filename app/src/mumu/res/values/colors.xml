@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="warna_button_qurban">#323232</color>
+    <color name="background_title_kambing_standar">#46b8d7</color>
+    <color name="background_title_kambing_premium">#61c7c4</color>
+    <color name="background_title_sapi">#3e75a8</color>
+    <color name="background_kambing_standar">#6acde7</color>
+    <color name="background_kambing_premium">#87d9d7</color>
+    <color name="background_sapi">#4a87bf</color>
     <color name="color_primary_mumu">#00AD9F</color>
     <color name="color_primary_dark_mumu">#007C6E</color>
     <color name="red_link_aja">#ea232a</color>

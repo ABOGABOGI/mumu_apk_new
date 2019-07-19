@@ -32,6 +32,10 @@ public class ListrikPrepaid extends BaseFragment {
 
     private RVAdapterPlnToken adapterPlnToken;
 
+    public ListrikPrepaid(){
+
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle bundle){
 

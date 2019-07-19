@@ -43,7 +43,7 @@ public class HomePresenter {
         }
     }
 
-    void setToolbarTitle(String title) {
+    public void setToolbarTitle(String title) {
         ((TextView) home.findViewById(R.id.abTvTitle)).setText(title);
     }
 

@@ -18,13 +18,14 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import id.hike.apps.android_mpos_mumu.Cfg;
 import id.hike.apps.android_mpos_mumu.R;
-import id.hike.apps.android_mpos_mumu.features.destinansi.DestinasiActivity;
 import id.hike.apps.android_mpos_mumu.features.donasi.donasi;
 import id.hike.apps.android_mpos_mumu.features.home.Home;
 import id.hike.apps.android_mpos_mumu.features.landing_page.model.MenuItem;
 import id.hike.apps.android_mpos_mumu.features.pdam.PdamActivity;
 import id.hike.apps.android_mpos_mumu.features.proteksi.ProteksiActivity;
-import id.hike.apps.android_mpos_mumu.features.tagihan_telepon.TagihanTeleponActivity;
+import id.hike.apps.android_mpos_mumu.features.qurban.MumuQurban;
+import id.hike.apps.android_mpos_mumu.features.telepon_pasca_dan_prabayar.pasca_bayar.FragmentTelepon;
+import id.hike.apps.android_mpos_mumu.features.telepon_pasca_dan_prabayar.pasca_bayar.TeleponPascaBayar;
 import id.hike.apps.android_mpos_mumu.features.wakaf.ProgramWakafActivity;
 
 public class RvAdapterMenuPager extends RecyclerView.Adapter<RvAdapterMenuPager.RvAdapterMenuPagerHolder> {
@@ -55,28 +56,11 @@ public class RvAdapterMenuPager extends RecyclerView.Adapter<RvAdapterMenuPager.
         holder.imageView.setImageResource(item.getImage());
         holder.titleView.setText(item.getTitle());
 
-        holder.imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                open(item);
-            }
-        });
+        holder.imageView.setOnClickListener(v -> open(item));
 
-        holder.titleView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                open(item);
-            }
-        });
+        holder.titleView.setOnClickListener(v -> open(item));
 
-        holder.view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                open(item);
-
-            }
-        });
+        holder.view.setOnClickListener(v -> open(item));
     }
 
     private void open(MenuItem item){
@@ -117,13 +101,13 @@ public class RvAdapterMenuPager extends RecyclerView.Adapter<RvAdapterMenuPager.
                 break;
 
             case R.drawable.telkom_umu:
-                //startHomeActivity(Cfg.TAG_TELKOM);
-                Intent goToTagihanTeleponIntent = new Intent(context, TagihanTeleponActivity.class);
-                context.startActivity(goToTagihanTeleponIntent);
+                startHomeActivity(Cfg.TAG_TELEPON);
+                /*Intent goToTagihanTeleponIntent = new Intent(context, FragmentTelepon.class);
+                context.startActivity(goToTagihanTeleponIntent);*/
                 break;
 
             case R.drawable.airplane:
-                Intent goToDestinasiIntent = new Intent(context, DestinasiActivity.class);
+                Intent goToDestinasiIntent = new Intent(context, MumuQurban.class);
                 context.startActivity(goToDestinasiIntent);
                 break;
 

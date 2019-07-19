@@ -32,7 +32,7 @@ import id.hike.apps.android_mpos_mumu.features.pelanggan.RVAdapterPelanggan;
 public class ListKotaAsalAdapter extends RecyclerView.Adapter<ListKotaAsalAdapter.MyViewHolder> {
 
     private Context mContext;
-    private List<ListKotaAsal> dataList;
+    public List<ListKotaAsal> dataList;
 
     public ListKotaAsalAdapter(Context mContext, List<ListKotaAsal> dataList) {
         this.mContext = mContext;

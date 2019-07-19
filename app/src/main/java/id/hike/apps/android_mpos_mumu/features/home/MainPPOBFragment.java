@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentTransaction;
 import id.hike.apps.android_mpos_mumu.Cfg;
 import id.hike.apps.android_mpos_mumu.R;
 import id.hike.apps.android_mpos_mumu.base.BaseFragment;
+import id.hike.apps.android_mpos_mumu.features.telepon_pasca_dan_prabayar.pasca_bayar.FragmentTelepon;
 import id.hike.apps.android_mpos_mumu.util.DBTransaction;
 
 public class MainPPOBFragment extends BaseFragment {
@@ -85,6 +86,11 @@ public class MainPPOBFragment extends BaseFragment {
 
                 break;
 
+            case Cfg.TAG_TELEPON:
+
+                commitFragment(new FragmentTelepon());
+
+                break;
         }
 
 

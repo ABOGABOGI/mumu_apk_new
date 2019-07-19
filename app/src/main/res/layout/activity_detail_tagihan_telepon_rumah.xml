@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".features.telepon_pasca_dan_prabayar.pasca_bayar.pascabayar_indosat.ActivityStrukPascaBayarIndosat">
+    tools:context=".features.telepon_pasca_dan_prabayar.tagihan_telepon_rumah.DetailTagihanTeleponRumah">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar_akad"
@@ -24,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto"
-                android:text="Tagihan Telepon"
+                android:text="Detail"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
                 tools:layout_editor_absoluteX="46dp"
@@ -33,57 +33,15 @@
         </androidx.appcompat.widget.Toolbar>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/printStrukPdam"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:background="@color/md_white_1000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar_akad">
-
-            <TextView
-                android:id="@+id/printer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="Cetak"
-                android:textColor="@color/color_primary_dark_mumu"
-                android:textSize="@dimen/_12dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/gambarPrinter"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/ic_printer"
-                app:layout_constraintBottom_toBottomOf="@+id/printer"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/printer"
-                app:layout_constraintTop_toTopOf="@+id/printer"
-                app:layout_constraintVertical_bias="0.533" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/printStrukPdam">
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_akad">
 
             <TextView
                 android:id="@+id/textView66"
@@ -92,7 +50,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:text="PEMBAYARAN TAGIHAN INDOSAT"
+                android:text="Detail Tagihan Pembayaran"
                 android:textColor="@color/color_primary_mumu"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -114,6 +72,18 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/color_primary_dark_mumu"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout14" />
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout15"
             android:layout_width="match_parent"
@@ -121,48 +91,10 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:background="@color/md_white_1000"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout14">
-
-            <TextView
-                android:id="@+id/textView65"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:text="No. HP"
-                android:textColor="@color/md_black_1000"
-                android:textSize="13dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView67"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="63dp"
-                android:text=":"
-                android:textColor="@color/md_black_1000"
-                android:textSize="13dp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView65"
-                app:layout_constraintStart_toEndOf="@+id/textView65"
-                app:layout_constraintTop_toTopOf="@+id/textView65"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginBottom="8dp"
-                android:textColor="@color/md_black_1000"
-                android:textSize="13dp"
-                android:text="0815035250909"
-                app:layout_constraintBottom_toBottomOf="@+id/textView67"
-                app:layout_constraintStart_toEndOf="@+id/textView67"
-                app:layout_constraintTop_toTopOf="@+id/textView67"
-                app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/textView77">
 
             <TextView
                 android:id="@+id/textView69"
@@ -170,17 +102,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Nama"
+                android:text="No. Telepon"
                 android:textColor="@color/md_black_1000"
                 android:textSize="13dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView65" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView68"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="69dp"
+                android:layout_marginStart="40dp"
                 android:text=":"
                 android:textColor="@color/md_black_1000"
                 android:textSize="13dp"
@@ -193,7 +125,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="ZAINUDDIN"
+                android:text="(021) 88112233"
                 android:textColor="@color/md_black_1000"
                 android:textSize="13dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView68"
@@ -201,59 +133,96 @@
                 app:layout_constraintTop_toTopOf="@+id/textView68" />
 
             <TextView
-                android:id="@+id/textView70"
+                android:id="@+id/textView72"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="BillReff"
+                android:text="Nama Customer"
                 android:textColor="@color/md_black_1000"
                 android:textSize="13dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView69" />
 
             <TextView
-                android:id="@+id/textView71"
+                android:id="@+id/textView73"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="62dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginBottom="8dp"
                 android:text=":"
                 android:textColor="@color/md_black_1000"
                 android:textSize="13dp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView70"
-                app:layout_constraintStart_toEndOf="@+id/textView70"
-                app:layout_constraintTop_toTopOf="@+id/textView70"
+                app:layout_constraintBottom_toBottomOf="@+id/textView72"
+                app:layout_constraintStart_toEndOf="@+id/textView72"
+                app:layout_constraintTop_toTopOf="@+id/textView72"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="0191318824"
+                android:text="ASYRAF SYAKIEB"
                 android:textColor="@color/md_black_1000"
                 android:textSize="13dp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView71"
-                app:layout_constraintStart_toEndOf="@+id/textView71"
-                app:layout_constraintTop_toTopOf="@+id/textView71" />
+                app:layout_constraintBottom_toBottomOf="@+id/textView73"
+                app:layout_constraintStart_toEndOf="@+id/textView73"
+                app:layout_constraintTop_toTopOf="@+id/textView73" />
+
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Alamat"
+                android:textColor="@color/md_black_1000"
+                android:textSize="13dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+            <TextView
+                android:id="@+id/textView79"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:layout_marginBottom="8dp"
+                android:text=":"
+                android:textColor="@color/md_black_1000"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView74"
+                app:layout_constraintStart_toEndOf="@+id/textView74"
+                app:layout_constraintTop_toTopOf="@+id/textView74"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Cawang, Jakarta Timur"
+                android:textColor="@color/md_black_1000"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView79"
+                app:layout_constraintStart_toEndOf="@+id/textView79"
+                app:layout_constraintTop_toTopOf="@+id/textView79" />
 
             <TextView
                 android:id="@+id/textView75"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:text="Bulan"
+                android:layout_marginTop="32dp"
+                android:text="Bulan Tagihan"
                 android:textColor="@color/md_black_1000"
                 android:textSize="13dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView70" />
+                app:layout_constraintTop_toBottomOf="@+id/textView74" />
 
             <TextView
                 android:id="@+id/samaDenganSatu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="72dp"
+                android:layout_marginStart="28dp"
                 android:text=":"
                 android:textColor="@color/md_black_1000"
                 android:textSize="13dp"
@@ -263,16 +232,17 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/textView81"
+                android:id="@+id/bulanTagihan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="JUNI 2019"
+                android:text="28072019"
                 android:textColor="@color/md_black_1000"
                 android:textSize="13dp"
                 app:layout_constraintBottom_toBottomOf="@+id/samaDenganSatu"
                 app:layout_constraintStart_toEndOf="@+id/samaDenganSatu"
-                app:layout_constraintTop_toTopOf="@+id/samaDenganSatu" />
+                app:layout_constraintTop_toTopOf="@+id/samaDenganSatu"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/textView76"
@@ -280,7 +250,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Jumlah Tagihan"
+                android:text="Total Tagihan"
                 android:textColor="@color/md_black_1000"
                 android:textSize="13dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -290,7 +260,7 @@
                 android:id="@+id/samaDenganDua"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
+                android:layout_marginStart="30dp"
                 android:text=":"
                 android:textColor="@color/md_black_1000"
                 android:textSize="13dp"
@@ -300,11 +270,12 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
+                android:id="@+id/totalTagihan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="8dp"
-                android:text="Rp. 61.958"
+                android:text="Rp. 152.460"
                 android:textColor="@color/md_black_1000"
                 android:textSize="13dp"
                 app:layout_constraintBottom_toBottomOf="@+id/samaDenganDua"
@@ -312,23 +283,75 @@
                 app:layout_constraintTop_toTopOf="@+id/samaDenganDua"
                 app:layout_constraintVertical_bias="0.0" />
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lihatDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView76">
+
+                <TextView
+                    android:id="@+id/textView78"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Lihat Detail"
+                    android:textSize="@dimen/_12dp"
+                    android:textColor="@color/color_primary_dark_mumu"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/gambarLihatDetail"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/ic_downarrow"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView78"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView78"
+                    app:layout_constraintTop_toTopOf="@+id/textView78"
+                    app:layout_constraintVertical_bias="0.533" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+        <Button
+            android:id="@+id/btnBayarPdam"
+            android:layout_width="157dp"
+            android:layout_height="37dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:fontFamily="@font/roboto"
-            android:text="Bayarlah tagihan sebelum jatuh tempo"
-            android:textAlignment="center"
-            android:textSize="13dp"
-            android:textColor="@color/md_black_1000"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_style_primary_mumu"
+            android:text="Bayar"
+            android:textColor="@color/md_white_1000"
+            android:textSize="12dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout15"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout15" />
+
+        <Button
+            android:id="@+id/btnBatalPdam"
+            android:layout_width="157dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_red"
+            android:text="Batal"
+            android:textColor="@color/md_white_1000"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout15" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

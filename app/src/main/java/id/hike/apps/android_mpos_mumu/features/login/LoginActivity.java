@@ -102,7 +102,7 @@ public class LoginActivity extends BaseActivity implements EasyPermissions.Permi
 
     private void onComponent() {
         etName = (EditText) findViewById(R.id.editText_email_login);
-        etPin = (EditText) findViewById(R.id.editText_password);
+        etPin = findViewById(R.id.editText_password);
         ckRemember = (CheckBox) findViewById(R.id.ckRemember);
 
         String usr = getSecPref().getString(Cfg.prefsUserEmail,"");
@@ -112,26 +112,23 @@ public class LoginActivity extends BaseActivity implements EasyPermissions.Permi
         }
 
         Button btnNext = (Button) findViewById(R.id.btnNext);
-        btnNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnNext.setOnClickListener(v -> {
 
-                Log.d(Cfg.TAG_COMMON, "fygu");
-                try{
+            Log.d(Cfg.TAG_COMMON, "fygu");
+            try{
 
-                if (etName.getText().toString().isEmpty() || etPin.getText().toString().isEmpty()) {
-                    Toast.makeText(LoginActivity.this, getString(R.string.mohon_lengkapi_form), Toast.LENGTH_SHORT).show();
-                    return;
-                }
+            if (etName.getText().toString().isEmpty() || etPin.getText().toString().isEmpty()) {
+                Toast.makeText(LoginActivity.this, getString(R.string.mohon_lengkapi_form), Toast.LENGTH_SHORT).show();
+                return;
+            }
 
-                loginAuth();
+            loginAuth();
 
-                Log.d("dadada", getSecPref().getString(Cfg.USERNAME_LOGIN_KEY,""));
+            Log.d("dadada", getSecPref().getString(Cfg.USERNAME_LOGIN_KEY,""));
 
 
-                }catch(Exception ex){
-                    ex.printStackTrace();
-                }
+            }catch(Exception ex){
+                ex.printStackTrace();
             }
         });
 

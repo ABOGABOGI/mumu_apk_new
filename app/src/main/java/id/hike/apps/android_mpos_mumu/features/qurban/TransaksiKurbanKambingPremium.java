@@ -17,13 +17,13 @@ import id.hike.apps.android_mpos_mumu.R;
 import id.hike.apps.android_mpos_mumu.base.BaseActivity;
 import id.hike.apps.android_mpos_mumu.util.UnitConversion;
 
-public class TransaksiKurbanSapi extends BaseActivity {
+public class TransaksiKurbanKambingPremium extends BaseActivity {
 
     TextView saldoMumu;
     Toolbar toolbar;
     TabLayout tabLayout;
     ViewPager viewPager;
-    SlideSapiPager pageAdapter;
+    SlideKambingPremiumPager pageAdapter;
     TabItem tabChats;
     TabItem tabStatus;
     ImageView btnBack;
@@ -31,7 +31,7 @@ public class TransaksiKurbanSapi extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_transaksi_kurban_sapi);
+        setContentView(R.layout.activity_transaksi_kurban_kambing_premium);
 
         saldoMumu = findViewById(R.id.totalSaldo);
         int saldo = getSecPref().getInt(Cfg.prefsWalletSaldo, 0);
@@ -47,7 +47,7 @@ public class TransaksiKurbanSapi extends BaseActivity {
         //tabCalls = findViewById(R.id.tabCalls);
         viewPager = findViewById(R.id.viewPager);
 
-        pageAdapter = new SlideSapiPager(getSupportFragmentManager(), tabLayout.getTabCount());
+        pageAdapter = new SlideKambingPremiumPager(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(pageAdapter);
 
         btnBack = findViewById(R.id.backButton);

@@ -1,4 +1,4 @@
-package id.hike.apps.android_mpos_mumu.features.telepon_pasca_dan_prabayar.pasca_bayar.pascabayar_indosat;
+package id.hike.apps.android_mpos_mumu.features.telepon_pasca_dan_prabayar.tagihan_telepon_rumah;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -14,9 +14,9 @@ import id.hike.apps.android_mpos_mumu.R;
 import id.hike.apps.android_mpos_mumu.features.pdam.ActivityStrukBayarPdam;
 import id.hike.apps.android_mpos_mumu.features.telepon_pasca_dan_prabayar.pasca_bayar.pascabayar_three.ActivityDetailPascaBayarThree;
 
-public class ActivityDetailPascaBayarIndosat extends AppCompatActivity {
+public class DetailTagihanTeleponRumah extends AppCompatActivity {
 
-    TextView periodePascaBayarTelkomsel, samaDenganPediode, samaDenganPemakaian, pemakaianPascaBayarTelkomsel, textLihatDetail, bulanPbIndosat, jumlahTagihanPbIndosat;
+    TextView periodePascaBayarTelkomsel, samaDenganPediode, samaDenganPemakaian, pemakaianPascaBayarTelkomsel, textLihatDetail, bulanTagihan, totalTagihan;
 
     ConstraintLayout lihatDetail;
     ImageView gambarLihatDetail;
@@ -27,22 +27,23 @@ public class ActivityDetailPascaBayarIndosat extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_pasca_bayar_indosat);
+        setContentView(R.layout.activity_detail_tagihan_telepon_rumah);
 
         periodePascaBayarTelkomsel = findViewById(R.id.textView75);
         samaDenganPediode = findViewById(R.id.samaDenganSatu);
         pemakaianPascaBayarTelkomsel = findViewById(R.id.textView76);
         samaDenganPemakaian = findViewById(R.id.samaDenganDua);
-        bulanPbIndosat = findViewById(R.id.textView81);
-        jumlahTagihanPbIndosat = findViewById(R.id.jumlahTagihanPbIndosat);
 
         lihatDetail = findViewById(R.id.lihatDetail);
         gambarLihatDetail = findViewById(R.id.gambarLihatDetail);
         textLihatDetail = findViewById(R.id.textView78);
 
+        bulanTagihan = findViewById(R.id.bulanTagihan);
+        totalTagihan = findViewById(R.id.totalTagihan);
+
         btnBayar = findViewById(R.id.btnBayarPdam);
         btnBayar.setOnClickListener(v -> {
-            Intent intent = new Intent(ActivityDetailPascaBayarIndosat.this, ActivityStrukPascaBayarIndosat.class);
+            Intent intent = new Intent(DetailTagihanTeleponRumah.this, ActivityStrukBayarPdam.class);
             startActivity(intent);
         });
 
@@ -55,8 +56,8 @@ public class ActivityDetailPascaBayarIndosat extends AppCompatActivity {
         samaDenganPediode.setVisibility(View.GONE);
         pemakaianPascaBayarTelkomsel.setVisibility(View.GONE);
         samaDenganPemakaian.setVisibility(View.GONE);
-        bulanPbIndosat.setVisibility(View.GONE);
-        jumlahTagihanPbIndosat.setVisibility(View.GONE);
+        bulanTagihan.setVisibility(View.GONE);
+        totalTagihan.setVisibility(View.GONE);
 
         lihatDetail.setOnClickListener(v -> {
 
@@ -65,8 +66,8 @@ public class ActivityDetailPascaBayarIndosat extends AppCompatActivity {
                 samaDenganPediode.setVisibility(View.VISIBLE);
                 pemakaianPascaBayarTelkomsel.setVisibility(View.VISIBLE);
                 samaDenganPemakaian.setVisibility(View.VISIBLE);
-                bulanPbIndosat.setVisibility(View.VISIBLE);
-                jumlahTagihanPbIndosat.setVisibility(View.VISIBLE);
+                bulanTagihan.setVisibility(View.VISIBLE);
+                totalTagihan.setVisibility(View.VISIBLE);
 
                 textLihatDetail.setText("Tutup");
                 gambarLihatDetail.setImageResource(R.drawable.ic_uparrow);
@@ -77,8 +78,8 @@ public class ActivityDetailPascaBayarIndosat extends AppCompatActivity {
                 samaDenganPediode.setVisibility(View.GONE);
                 pemakaianPascaBayarTelkomsel.setVisibility(View.GONE);
                 samaDenganPemakaian.setVisibility(View.GONE);
-                bulanPbIndosat.setVisibility(View.GONE);
-                jumlahTagihanPbIndosat.setVisibility(View.GONE);
+                bulanTagihan.setVisibility(View.GONE);
+                totalTagihan.setVisibility(View.GONE);
 
                 textLihatDetail.setText("Lihat Detail");
                 gambarLihatDetail.setImageResource(R.drawable.ic_downarrow);
